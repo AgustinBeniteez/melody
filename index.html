@@ -4,13 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css' rel='stylesheet'/>
-    <title>Document</title>
+    <!-- Idea dependiendo de la cacion en reproduccion cambiar el tituo con el nombre de la cacion -->
+    <title>Reproductor Melody</title>
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
     <main>
         <section id="song-list" class="item"></section>
-        <section id="song-info" class="item"></section>
+        <section id="song-info" class="item">
+            <div class="song-info-container">
+                <img src="/src/img/thumbnails/img-default.webp" alt="imagn no encontrada">
+                <div class="song-info-text">
+                    <h2 class="song-info-title">Nombre</h2>
+                    <p class="song-info-artist">Artist</p>
+                </div>
+                <section id="lyrics-container">
+                    <button>Ver letra</button>
+                    <div id="lyrics">
+                        <p>
+                            <!-- Aqui es donde estara la letra de cada cancion-->
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </section>
         <section id="account-info" class="item"></section>
         <section id="control-panel" class="item"></section>
     </main>
