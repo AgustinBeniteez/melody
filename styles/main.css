@@ -5,6 +5,8 @@
     --section-clolor: #4F2F2F;
     --button-color: #D98888;
     --item-list:#905959;
+    /* --------fuente-------*/
+    --fuente-text: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
 * {
@@ -15,11 +17,12 @@
 
 body {
     background-color: var(--background-color);
+    font-family: var(--fuente-text);
 }
 
 main {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 0.2fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 0.5fr;
     gap: 10px;
     margin: 10px;
@@ -67,4 +70,41 @@ main {
 
 #song-info {
     background-color: var(--section-clolor);
+}
+
+/* ----APARTADO DERECHA INFO DE LA CANCION------ */
+#song-info #thumbnails-info-container {
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+    margin: 10% 10% 5% 10%;
+
+    background-color: var(--item-list);
+}
+
+#song-info #song-info-text {
+    
+    display: flex;
+    flex-direction: column;
+    margin: 0 10% 5% 10%;
+
+    /*fuente styles*/
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+
+#song-info #btn-show-lyrics {
+    margin: 0 10% 5% 10%;
+    width: 30%;
+    padding: 10px 5px 10px 5px;
+    border-radius: 15px;
+    background-color: var(--button-color);
+    border: none;
+
+    /*fuente styles*/
+    font-family: var(--fuente-text);
+    font-weight: bold;
+    font-size: 1rem;
+    color: var(--secondary-color);
 }
