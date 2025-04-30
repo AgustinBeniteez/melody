@@ -7,16 +7,30 @@
     --item-list:#905959;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    background-color: var(--background-color);
+}
 
 main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 10px 10px;
-    height: 100%;
-    width: 100%;
+    gap: 10px;
+    margin: 10px;
+    height: 97vh;
+    width: 98.5vw;
+    
   }
+
+.item{
+    border-radius: 15px;
+}
 
 .item:nth-child(1) {
     grid-area: 1 / 1 / 2 / 2;
