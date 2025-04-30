@@ -20,7 +20,7 @@ body {
 main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 0.5fr;
     gap: 10px;
     margin: 10px;
     height: 97vh;
@@ -55,16 +55,16 @@ main {
 }
 
 #account-info{
-    background-color: var(--button-color);
+    background-color: var(--section-clolor);
 }
 #control-panel {
     background-color: var(--section-clolor);
 }
 
 #song-list {
-   background-color: var(--item-list);
+   background-color: var(--section-clolor);
 }
 
 #song-info {
-    background-color: var(--button-color);
+    background-color: var(--section-clolor);
 }
