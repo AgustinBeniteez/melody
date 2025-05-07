@@ -10,10 +10,10 @@ fetch("/src/data/data.json")
     const songList = document.getElementById("song-list-content");
 
     songs.forEach((song) => {
-        const songElement = document.createElement('div');
-        songElement.className = 'song';
-        songElement.id = `song-${song.title}`;
-        songElement.innerHTML = `
+      const songElement = document.createElement("div");
+      songElement.className = "song";
+      songElement.id = `song-${song.title}`;
+      songElement.innerHTML = `
           <img src="${song.albumImageUrl}" alt="${song.title}">
           <div class="song-details">
             <h2>${song.title}</h2>
@@ -22,31 +22,34 @@ fetch("/src/data/data.json")
           </div>
         `;
 
-        //-------- funciones ------------
-        //--- cambia la infomacion del reproductor
-        function changeSongInfo(song) {
+      //-------- funciones ------------
+      //--- cambia la infomacion del reproductor
+      function changeSongInfo(song) {
         //---- obtengo los elementos del html
-          const infoSongSide = document.getElementById('thumbnails-info-container');
-          const infoSongTitle = document.getElementsByClassName('song-info-title');
-          const infoSongArtist = document.getElementsByClassName('song-info-artist');
-          const lyricsContainer = document.getElementById('lyrics');
+        const infoSongSide = document.getElementById(
+          "thumbnails-info-container"
+        );
+        const infoSongTitle =
+          document.getElementsByClassName("song-info-title");
+        const infoSongArtist =
+          document.getElementsByClassName("song-info-artist");
+        const lyricsContainer = document.getElementById("lyrics");
         //---- remplazo el contenido por el de la cancion seleccionada
-          infoSongSide.src = song.albumImageUrl;
-          infoSongTitle[0].textContent = song.title;
-          infoSongArtist[0].textContent = song.artist;
-          lyricsContainer.textContent = song.lyrics;
-        }
+        infoSongSide.src = song.albumImageUrl;
+        infoSongTitle[0].textContent = song.title;
+        infoSongArtist[0].textContent = song.artist;
+        lyricsContainer.textContent = song.lyrics;
+      }
 
+      // agrega event listener para el clic
+      songElement.addEventListener("click", () => {
+        selectedSong = song;
+        //---- prueba de cancion selecionada para ver en consola
+        console.log("Canción seleccionada:", selectedSong);
+        //---------- llamar a funcion que cambie la cancion del reproductor ------
+        changeSongInfo(selectedSong);
+      });
 
-        // agrega event listener para el clic
-        songElement.addEventListener('click', () => {
-          selectedSong = song;
-          //---- prueba de cancion selecionada para ver en consola 
-          console.log('Canción seleccionada:', selectedSong);
-          //---------- llamar a funcion que cambie la cancion del reproductor ------
-          changeSongInfo(selectedSong);
-        });
-
-        songList.appendChild(songElement);
+      songList.appendChild(songElement);
     });
   });
