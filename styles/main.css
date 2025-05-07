@@ -10,6 +10,7 @@
     --buscador:#905959;
     --font-color:#1f1414;
     --font-secondary-color: #c28f8f;
+    --font-tertiary-color: #7a5a5a;
     /* --------fuente-------*/
     --fuente-text: "Lexend", Arial, Helvetica, sans-serif;
 }
@@ -77,7 +78,9 @@ main {
     background-color: var(--section-clolor);
 
 }
-
+#search{
+    color: var(--font-secondary-color);
+}
 /* ----APARTADO DERECHA INFO DE LA CANCION------ */
 #song-info #thumbnails-info-container {
     width: 80%;
@@ -196,6 +199,14 @@ main {
     color: var(--font-secondary-color);
  }
  
+ #lyrics{
+    color: var(--font-tertiary-color);
+    transition: ease-in-out 0.5s;
+    &:hover{
+       color: var(--font-secondary-color);
+       transition: all 0.5s;
+    }
+ }
 
  #lyrics-container::-webkit-scrollbar {
     width: 12px;
