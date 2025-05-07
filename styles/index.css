@@ -31,13 +31,67 @@ main, section {
     width: 950px;
     height: 100%;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 70px;
     border-radius: 20px;
     background-color: var(--background-color);
     padding: 20px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     margin-bottom: 20px;
-}   
+}
+
+header {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+    width: 60%;
+    height: 50px;
+    margin-bottom: 20px;
+    background-color: var(--background-color);
+    border-radius: 30px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3px 6px 0 6px;
+}
+
+nav div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--font-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 40px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: var(--button-color);
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+        color: var(--background-color);
+    }
+}
+
+#logo-main {
+    position: absolute;
+    top: 0 ;
+    left: 30px;
+    width: 70px;
+}
 
 main {
     width: 99%;
