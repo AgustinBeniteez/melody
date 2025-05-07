@@ -1,5 +1,7 @@
+/*Import de fuentes */
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 
+/* ----- Asignacion Variables de colores -----*/
 :root {
     --primary-color: #000;
     --secondary-color: #fff;
@@ -131,11 +133,21 @@ main {
     transition: ease-in.4s;
     justify-content: flex-start;
     gap: 10px;
+    position: relative;
+    &:hover{
+        background-color: var(--button-color);
+        transition: ease-in.4s;
+    }
 }
 
-.song:hover{
-    background-color: var(--button-color);
-    transition: ease-in.4s;
+.song-releaseYear{
+    position: absolute;
+    right: 10%;
+}
+
+.song-duration{
+    position: absolute;
+    right: 25%;
 }
 
 .song img{
@@ -161,10 +173,12 @@ main {
 #song-list::-webkit-scrollbar-thumb {
    background: var(--item-list);
    border-radius: 10px;
+   transition: all 0.5s;
 }
 
 #song-list::-webkit-scrollbar-thumb:hover {
    background: var(--button-color);
+   transition: ease-in.0.4s;
 }
 
 #search input{
@@ -190,7 +204,7 @@ main {
     font-size: 0.9rem;
  }
 
- #lyrics-container{
+#lyrics-container{
     width: 100%;
     height: 27vh;
     padding: 0 30px;
@@ -199,9 +213,10 @@ main {
     color: var(--font-secondary-color);
  }
  
- #lyrics{
+#lyrics{
     color: var(--font-tertiary-color);
     transition: ease-in-out 0.5s;
+
     &:hover{
        color: var(--font-secondary-color);
        transition: all 0.5s;
@@ -272,4 +287,12 @@ main {
    border: none;
    font-size: 1.5rem;
    color: var(--font-secondary-color);
+   transition: all 0.5s;
+   
+   &:hover{
+      color: var(--button-color);
+      transform: scale(1.15);
+      transition: all 0.5s;
+      cursor: pointer;
+   }
 }
