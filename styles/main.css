@@ -159,12 +159,12 @@ main {
 }
 
 #song-list::-webkit-scrollbar-thumb {
-   background: var(--button-color);
+   background: var(--item-list);
    border-radius: 10px;
 }
 
 #song-list::-webkit-scrollbar-thumb:hover {
-   background: var(--item-list);
+   background: var(--button-color);
 }
 
 #search input{
