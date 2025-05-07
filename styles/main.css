@@ -134,9 +134,11 @@ main {
     justify-content: flex-start;
     gap: 10px;
     position: relative;
+    
     &:hover{
         background-color: var(--button-color);
-        transition: ease-in.4s;
+        transform: scale(1.01);
+        transition: ease-in 0.2s;
     }
 }
 
