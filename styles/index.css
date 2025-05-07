@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+:root {
+    --primary-color: #000;
+    --secondary-color: #fff;
+    --background-color: #967171;
+    --section-clolor: #4F2F2F;
+    --button-color: #D98888;
+    --item-list:#905959;
+    --font-color:#1f1414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lexend", sans-serif;
+}
+
+body {
+    background-color: var(--section-clolor);
+    font-family: var(--fuente-text);
+}
+
+main, section {
+    width: 950px;
+    height: 100%;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 20px;
+    background-color: var(--background-color);
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    margin-bottom: 20px;
+}   
+
+main {
+    width: 99%;
+    height: 100%;
+}
+
+p, h1, h2, h3, ul {
+    color: var(--font-color);
+    padding-bottom: 10px;
+}
+
+b {color: var(--font-color);}
+
+h1, h3 {
+    text-align: center;
+
+}
+
+ul {
+    padding-left: 30px;
+}
+a {
+    color: #2626a4;
+}
+
+
+h1 {
+    margin: 0px;
+}
+
+.wave-text span {
+    display: inline-block;
+    font-size: 4rem;
+    animation: wave 2s ease-in-out infinite;
+}
+
+.wave-text span:nth-child(1) {
+    animation-delay: 0s;
+}
+.wave-text span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.wave-text span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+.wave-text span:nth-child(4) {
+    animation-delay: 0.6s;
+}
+.wave-text span:nth-child(5) {
+    animation-delay: 0.8s;
+}
+.wave-text span:nth-child(6) {
+    animation-delay: 1s;
+}
+.wave-text span:nth-child(7) {
+    animation-delay: 1.2s;
+}
+
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.main-image-container {
+    justify-content: center;
+    display:flex;
+}
+
+.main-image-container img {
+    margin-top: -20px;
+    scale: 1.0;
+    transition-duration: 3s;
+    
+}
+
+.main-image-container img:hover {
+    scale: 1.1;
+    transition-duration: 3s;
+}
+
+
+details {
+    padding: 30px;
+    border-radius: 20px;
+    background-color: var(--section-clolor);
+    margin: auto;
+    width: 1050px;
+    margin-bottom: 20px;
+
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 7px 5px;
+  }
+  
+  summary {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #c28f8f;
+  }
+
+  details p {
+    color: #b38787;
+  }
+  
+  summary::marker {
+    content: "";
+  }

@@ -1,20 +1,51 @@
-//-------- LEECTURA DE JSON --------//
-fetch("../src/data/data.json")
+//-------- LEECTURA DE JSON Y MANEJO DE EVENTOS --------//
+
+// Variable global para almacenar la canción seleccionada
+let selectedSong = null;
+
+fetch("/src/data/data.json")
   .then((response) => response.json())
   .then((data) => {
-    //--- usamos 
     const songs = data.songs;
-    const songList = document.getElementById("song-list");
+    const songList = document.getElementById("song-list-content");
+
     songs.forEach((song) => {
-        songList.innerHTML += `
-        <div class="song">
-        <img src="${song.img}" alt="${song.title}">
-        <div class="song-details">
-          <h2>${song.title}</h2>
-          <p>${song.artist}</p>
-          <p>${song.album}</p>
-        </div>
-      </div>
+        const songElement = document.createElement('div');
+        songElement.className = 'song';
+        songElement.id = `song-${song.title}`;
+        songElement.innerHTML = `
+          <img src="${song.albumImageUrl}" alt="${song.title}">
+          <div class="song-details">
+            <h2>${song.title}</h2>
+            <p>${song.artist}</p>
+            <p>${song.album}</p>
+          </div>
         `;
-    })
-  })
+
+        //-------- funciones ------------
+        //--- cambia la infomacion del reproductor
+        function changeSongInfo(song) {
+        //---- obtengo los elementos del html
+          const infoSongSide = document.getElementById('thumbnails-info-container');
+          const infoSongTitle = document.getElementsByClassName('song-info-title');
+          const infoSongArtist = document.getElementsByClassName('song-info-artist');
+        //---- remplazo el contenido por el de la cancion seleccionada
+          infoSongSide.src = song.albumImageUrl;
+          infoSongTitle.textContent = song.title;
+          infoSongArtist.textContent = song.artist;
+               
+        }
+
+
+        // agrega event listener para el clic
+        songElement.addEventListener('click', () => {
+          selectedSong = song;
+          //---- prueba de cancion selecionada para ver en consola 
+          console.log('Canción seleccionada:', selectedSong);
+          //---------- llamar a funcion que cambie la cancion del reproductor ------
+          changeSongInfo(selectedSong);
+        });
+
+        songList.appendChild(songElement);
+    });
+  });

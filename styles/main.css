@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
 :root {
     --primary-color: #000;
     --secondary-color: #fff;
@@ -5,8 +7,9 @@
     --section-clolor: #4F2F2F;
     --button-color: #D98888;
     --item-list:#905959;
+    --buscador:#905959;
     /* --------fuente-------*/
-    --fuente-text: 'Roboto', Arial, Helvetica, sans-serif;
+    --fuente-text: "Lexend", Arial, Helvetica, sans-serif;
 }
 
 * {
@@ -106,4 +109,69 @@ main {
     font-weight: bold;
     font-size: 1rem;
     color: var(--secondary-color);
+}
+
+.song {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: var(--item-list);
+    transition: ease-in.4s;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.song:hover{
+    background-color: var(--button-color);
+    transition: ease-in.4s;
+}
+
+.song img{
+   width: 100px;
+   height: 100px;
+   border-radius: 10px;
+}
+
+#song-list{
+   overflow-y: scroll;
+}
+
+/* Estilo de la barra de desplazamiento */
+#song-list::-webkit-scrollbar {
+   width: 12px;
+}
+
+#song-list::-webkit-scrollbar-track {
+   background: transparent;
+
+}
+
+#song-list::-webkit-scrollbar-thumb {
+   background: var(--button-color);
+   border-radius: 10px;
+}
+
+#song-list::-webkit-scrollbar-thumb:hover {
+   background: var(--item-list);
+}
+
+
+
+#search input{
+   padding: 10px 5px 10px 5px;
+   height: 30px;
+   width: 70%;
+   border-radius: 15px;
+   margin: 10px;
+   background-color: var(--buscador);
+   color: var(--primary-color);
+   border: none;
+   font-family: var(--fuente-text);
+}
+
+#search input::placeholder {
+   color: var(--primary-color);
 }
