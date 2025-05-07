@@ -17,8 +17,8 @@ fetch("/src/data/data.json")
           <img src="${song.albumImageUrl}" alt="${song.title}">
           <div class="song-details">
             <h2>${song.title}</h2>
-            <p>${song.artist}</p>
-            <p>${song.album}</p>
+            <p><i class="fa-solid fa-microphone-lines" style="padding-left:2px;"></i> ${song.artist}</p>
+            <p><i class="fa-solid fa-compact-disc"></i> ${song.album}</p>
           </div>
         `;
 
@@ -29,11 +29,12 @@ fetch("/src/data/data.json")
           const infoSongSide = document.getElementById('thumbnails-info-container');
           const infoSongTitle = document.getElementsByClassName('song-info-title');
           const infoSongArtist = document.getElementsByClassName('song-info-artist');
+          const lyricsContainer = document.getElementById('lyrics');
         //---- remplazo el contenido por el de la cancion seleccionada
           infoSongSide.src = song.albumImageUrl;
-          infoSongTitle.textContent = song.title;
-          infoSongArtist.textContent = song.artist;
-               
+          infoSongTitle[0].textContent = song.title;
+          infoSongArtist[0].textContent = song.artist;
+          lyricsContainer.textContent = song.lyrics;
         }
 
 

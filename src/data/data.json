@@ -1,62 +1,70 @@
 {
-  "songs": [
-    {
-      "title": "The Emptiness Machine",
-      "artist": "Linkin Park",
-      "album": "From Zero",
-      "genre": "Rock",
-      "releaseYear": 2024,
-      "audioUrl": "https://cdnt-preview.dzcdn.net/api/1/1/c/c/a/0/ccae8222bcc75edb69a47af371cfd2b0.mp3?hdnea=exp=1746603889~acl=/api/1/1/c/c/a/0/ccae8222bcc75edb69a47af371cfd2b0.mp3*~data=user_id=0,application_id=42~hmac=3ea627c8c7811d12a06073ec993ca8dcbf794d3a185a547c97583da01a2482aa",
-      "albumImageUrl": "https://cdn-images.dzcdn.net/images/cover/1e8ffbd401303b5693226c12ee0b84fb/1000x1000-000000-80-0-0.jpg",
-      "source": "deezer"
-    },
-    {
-      "title": "vampire",
-      "artist": "Olivia Rodrigo",
-      "album": "GUTS",
-      "genre": "Pop",
-      "releaseYear": 2023,
-      "audioUrl": "https://cdnt-preview.dzcdn.net/api/1/1/c/c/a/0/ccae8222bcc75edb69a47af371cfd2b0.mp3",
-      "albumImageUrl": "https://cdn-images.dzcdn.net/images/cover/4bb79214365c0049e031f5e2caae4752/1000x1000-000000-80-0-0.jpg",
-      "source": "deezer"
-    },
-    {
-      "title": "Welcome to New York",
-      "artist": "Taylor Swift",
-      "album": "1989 (Taylor's Version)",
-      "genre": "Pop",
-      "releaseYear": 2023,
-      "audioUrl": "https://cdnt-preview.dzcdn.net/api/1/1/c/c/a/0/ccae8222bcc75edb69a47af371cfd2b0.mp3",
-      "albumImageUrl": "https://cdn-images.dzcdn.net/images/cover/60c1f1896b2f6b4a4a29ca45d314d4bf/1000x1000-000000-80-0-0.jpg",
-      "source": "deezer"
-    },
-    {
-      "title": "72 Seasons",
-      "artist": "Metallica",
-      "album": "72 Seasons",
-      "genre": "Rock",
-      "releaseYear": 2023,
-      "audioUrl": "https://cdnt-preview.dzcdn.net/api/1/1/c/c/a/0/ccae8222bcc75edb69a47af371cfd2b0.mp3",
-      "albumImageUrl": "https://cdn-images.dzcdn.net/images/cover/39aadc0fb5b3ca28614a2e064f7f7440/1000x1000-000000-80-0-0.jpg",
-      "source": "deezer"
-    }, {
-        "title": "UP From the bottom",
-        "artist": "Linkin Park",
-        "album": "From Zero Deluxe Edition",
-        "genre": "Rock",
-        "releaseYear": 2025,
-        "audioUrl": "https://cdnt-preview.dzcdn.net/api/1/1/9/1/0/0/910580842882977f28c3c5cdfc51938c.mp3?hdnea=exp=1746604411~acl=/api/1/1/9/1/0/0/910580842882977f28c3c5cdfc51938c.mp3*~data=user_id=0,application_id=42~hmac=ce3990f7e1163b05c51a4390ab2dd8f98b29927295aac109c7499136bd1e6420",
-        "albumImageUrl": "https://cdn-images.dzcdn.net/images/cover/91043dc582be268d9f6aa3c8208f2b6c/1000x1000-000000-80-0-0.jpg",
-        "source": "deezer"
-      },  {
-        "title": "Heavy Is The Crown",
-        "artist": "Linkin Park",
-        "album": "From Zero",
-        "genre": "Rock",
-        "releaseYear": 2024,
-        "audioUrl": "https://cdnt-preview.dzcdn.net/api/1/1/2/b/9/0/2b9e007bb116c1b31a5d0b59a85a9971.mp3?hdnea=exp=1746604483~acl=/api/1/1/2/b/9/0/2b9e007bb116c1b31a5d0b59a85a9971.mp3*~data=user_id=0,application_id=42~hmac=f73655f07d7920298a92be7e39a9d192ecf827bb3af7a0c09be6047f3da170c4",
-        "albumImageUrl": "https://cdn-images.dzcdn.net/images/cover/1e8ffbd401303b5693226c12ee0b84fb/1000x1000-000000-80-0-0.jpg",
-        "source": "deezer"
-      }
-  ]
+    "songs": [
+        {
+            "title": "The Emptiness Machine",
+            "artist": "Linkin Park",
+            "album": "From Zero",
+            "genre": "Rock",
+            "releaseYear": 2024,
+            "audioUrl": "https://cdnt-preview.dzcdn.net/api/1/1/c/c/a/0/ccae8222bcc75edb69a47af371cfd2b0.mp3?hdnea=exp=1746603889~acl=/api/1/1/c/c/a/0/ccae8222bcc75edb69a47af371cfd2b0.mp3*~data=user_id=0,application_id=42~hmac=3ea627c8c7811d12a06073ec993ca8dcbf794d3a185a547c97583da01a2482aa",
+            "albumImageUrl": "https://cdn-images.dzcdn.net/images/cover/1e8ffbd401303b5693226c12ee0b84fb/1000x1000-000000-80-0-0.jpg",
+            "source": "deezer",
+            "lyrics":"Your blades are sharpened with precision (precision)\nFlashing your favorite point of view (point of view)\nI know you're waiting in the distance (distance)\nJust like you always do, just like you always do\n\nAlready pulling me in\nAlready under my skin\nAnd I know exactly how this ends, I\n\nLet you cut me open just to watch me bleed\nGave up who I am for who you wanted me to be\nDon't know why I'm hoping for what I won't receive\nFalling for the promise of the emptiness machine\nThe emptiness machine\n\nGoing around like a revolver (like a revolver)\nIt's been decided how we lose (how we lose)\n'Cause there's a fire under the altar (the altar)\nI keep on lying to, I keep on lying to\n\nAlready pulling me in\nAlready under my skin\nAnd I know exactly how this ends, I\n\nLet you cut me open just to watch me bleed\nGave up who I am for who you wanted me to be\nDon't know why I'm hoping for what I won't receive\nFalling for the promise of the emptiness machine\n\nI only wanted to be part of something\nI only wanted to be part of, part of\nI only wanted to be part of something\nI only wanted to be part of, part of\nI only wanted to be part of something\nI only wanted to be part\n\nI let you cut me open just to watch me bleed\nGave up who I am for who you wanted me to be\nDon't know why I'm hoping, so fucking naive\nFalling for the promise of the emptiness machine\nThe emptiness machine\n\n(I only wanted to be part of something) the emptiness machine, oh\n(I only wanted to be part of) the emptiness machine"
+        },
+        {
+            "title": "vampire",
+            "artist": "Olivia Rodrigo",
+            "album": "GUTS",
+            "genre": "Pop",
+            "releaseYear": 2023,
+            "audioUrl": "https://cdnt-preview.dzcdn.net/api/1/1/c/c/a/0/ccae8222bcc75edb69a47af371cfd2b0.mp3",
+            "albumImageUrl": "https://cdn-images.dzcdn.net/images/cover/4bb79214365c0049e031f5e2caae4752/1000x1000-000000-80-0-0.jpg",
+            "source": "deezer",
+            "lyrics": "Hate to give the satisfaction asking how you're doing now\nHow's the castle built off people you pretend to care about?\nJust what you wanted\nLook at you, cool guy, you got it\nI see the parties and the diamonds sometimes when I close my eyes\nSix months of torture you sold as some forbidden paradise\nI loved you truly\nYou gotta laugh at the stupidity\n'Cause I've made some real big mistakes\nBut you make the worst one look fine\nI should've known it was strange\nYou only come out at night\nI used to think I was smart\nBut you made me look so naive\nThe way you sold me for parts\nAs you sunk your teeth into me, oh\nBloodsucker, famefucker\nBleedin' me dry like a goddamn vampire\nAnd every girl I ever talked to told me you were bad, bad news\nYou called them crazy, God, I hate the way I called 'em crazy too\nYou're so convincing\nHow do you lie without flinching?\n(How do you lie? How do you lie? How do you lie?)\nOh, what a mesmerizing, paralyzing, fucked up little thrill\nCan't figure out just how you do it and God knows I never will\nWent for me and not her\n'Cause girls your age know better\nI've made some real big mistakes\nBut you make the worst one look fine\nI should've known it was strange\nYou only come out at night\nI used to think I was smart\nBut you made me look so naive\nThe way you sold me for parts\nAs you sunk your teeth into me, oh\nBloodsucker, famefucker\nBleedin' me dry like a goddamn vampire\nYou said it was true love, but wouldn't that be hard?\nYou can't love anyone 'cause that would mean you had a heart\nI tried to help you out, now I know that I can't\n'Cause how you think's the kind of thing I'll never understand\nI've made some real big mistakes\nBut you make the worst one look fine\nI should've known it was strange\nYou only come out at night\nI used to think I was smart\nBut you made me look so naive\nThe way you sold me for parts\nAs you sunk your teeth into me, oh\nBloodsucker, famefucker\nBleedin' me dry like a goddamn vampire"
+        },
+        {
+            "title": "Welcome to New York",
+            "artist": "Taylor Swift",
+            "album": "1989 (Taylor's Version)",
+            "genre": "Pop",
+            "releaseYear": 2023,
+            "audioUrl": "https://cdnt-preview.dzcdn.net/api/1/1/c/c/a/0/ccae8222bcc75edb69a47af371cfd2b0.mp3",
+            "albumImageUrl": "https://cdn-images.dzcdn.net/images/cover/60c1f1896b2f6b4a4a29ca45d314d4bf/1000x1000-000000-80-0-0.jpg",
+            "source": "deezer",
+            "lyrics": "Walking through a crowd, the village is aglow\nKaleidoscope of loud heartbeats under coats\nEverybody here wanted something more\nSearching for a sound we hadn't heard before\nAnd it said\n\nWelcome to New York\nIt's been waiting for you\nWelcome to New York\nWelcome to New York\nWelcome to New York\nIt's been waiting for you\nWelcome to New York\nWelcome to New York\n\nIt's a new soundtrack, I could dance to this beat, beat\nForever more\nThe lights are so bright, but they never blind me, me\nWelcome to New York\nIt's been waiting for you\nWelcome to New York\nWelcome to New York\n\nWhen we first dropped our bags on apartment floors\nTook our broken hearts, put them in a drawer\nEverybody here was someone else before\nAnd you can want who you want\nBoys and boys and girls and girls\n\nWelcome to New York\nIt's been waiting for you\nWelcome to New York\nWelcome to New York\nWelcome to New York\nIt's been waiting for you\nWelcome to New York\nWelcome to New York\n\nIt's a new soundtrack, I could dance to this beat, beat\nForever more\nThe lights are so bright, but they never blind me, me\nWelcome to New York (New York)\nIt's been waiting for you\nWelcome to New York\nWelcome to New York\n\nLike any great love, it keeps you guessing\nLike any real love, it's ever changing\nLike any true love, it drives you crazy\nBut you know you wouldn't change anything, anything, anything\n\nWelcome to New York\nIt's been waiting for you\nWelcome to New York\nWelcome to New York\nWelcome to New York\nIt's been waiting for you\nWelcome to New York\nWelcome to New York\n\nIt's a new soundtrack, I could dance to this beat\nThe lights are so bright, but they never blind me (welcome to New York)\nNew soundtrack (it's been waiting for you)\n(Welcome to New York) the lights are so bright, but they never blind me\n(Welcome to New York) so bright, they never blind me\n(Welcome to New York)\nWelcome to New York"
+        },
+        {
+            "title": "72 Seasons",
+            "artist": "Metallica",
+            "album": "72 Seasons",
+            "genre": "Rock",
+            "releaseYear": 2023,
+            "audioUrl": "https://cdnt-preview.dzcdn.net/api/1/1/c/c/a/0/ccae8222bcc75edb69a47af371cfd2b0.mp3",
+            "albumImageUrl": "https://cdn-images.dzcdn.net/images/cover/39aadc0fb5b3ca28614a2e064f7f7440/1000x1000-000000-80-0-0.jpg",
+            "source": "deezer",
+            "lyrics": "Feeding on the wrath of man\n\nShot down, traumatic\nTime haunted by the past\nLong gone, dogmatic\nAlthough the die is cast\n\nShot down, volcanic\nBut what is gone is gone and done\nLook back, psychotic\nNo chance before this life began\n\nStaring into black light\nDominating birthright\n\nWrath of man\nLeaching through, split in two\nWrath of man\nCrash into point of view\nWrath of man\nViolence, inheritance\nWrath of man\nThrive upon, feeding on\nSeventy-two seasons gone\n\nFeeding on the wrath of man\n\nShoot back, erratic\nMad seasons take their toll\nNew mask, chaotic\nCompletely lost control\n\nShoot back, fanatic\nWither under looming shadow cast\nSlip back, narcotic\nBlinded by the ashes of the past\n\nStaring into black light\nChoking on the stage fright\n\nWrath of man\nLeaching through, split in two\nWrath of man\nCrash into point of view\nWrath of man\nViolence, inheritance\nWrath of man\nThrive upon, feeding on\nSeventy-two seasons gone\n\nPiercing through, cut in two\nPolarize\nPoint of view crash into\nParalyze\n\nFeeding on the wrath of man\n\nMan down, barbaric\nQuick fire machine gun thoughts\nDeep seed, stigmatic\nSome have and some have not\n\nMan down, demonic\nNo mercy from the ghost within\nTurn back, hypnotic\nThere's breathing out, but not back in\n\nStaring into black light\nPermanently midnight\n\nWrath of man\nLeaching through, split in two\nWrath of man\nCrash into point of view\nWrath of man\nViolence, inheritance\nWrath of man\nThrive upon, feeding on\nSeventy-two seasons gone\n\nFeeding on the wrath of man"
+        },
+        {
+            "title": "UP From the bottom",
+            "artist": "Linkin Park",
+            "album": "From Zero Deluxe Edition",
+            "genre": "Rock",
+            "releaseYear": 2025,
+            "audioUrl": "https://cdnt-preview.dzcdn.net/api/1/1/9/1/0/0/910580842882977f28c3c5cdfc51938c.mp3?hdnea=exp=1746604411~acl=/api/1/1/9/1/0/0/910580842882977f28c3c5cdfc51938c.mp3*~data=user_id=0,application_id=42~hmac=ce3990f7e1163b05c51a4390ab2dd8f98b29927295aac109c7499136bd1e6420",
+            "albumImageUrl": "https://cdn-images.dzcdn.net/images/cover/91043dc582be268d9f6aa3c8208f2b6c/1000x1000-000000-80-0-0.jpg",
+            "source": "deezer",
+            "lyrics": "Inside, it feels like I've been barely breathing\nFeels like air is running out\nInside, I'm stuck here staring at a ceiling (ceiling)\nYou put up to keep me down, down, down, down, down\n\nWaking up without a name\nOpen up my eyes knowing nothing is the same (same)\nCircling around a drain\nAs I realize that there's no one else to blame\n\nYou keep me waiting down here, so far below\nStaring up from the bottom, up from the bottom\nI try escaping, but there's nowhere to go\nStaring up from the bottom, up from the bottom\n\nEach time I hold my fist inside my pocket\nHold my breath until I'm blue\nFeels like a knife pushed deep inside a socket (socket)\nBristling, listening to you, you, you, you, you\n\nWaking up without a name\nOpening my eyes knowing nothing's gonna change (change)\nCircling around a drain\nAs I realize that there's no one else to blame\n\nYou keep me waiting down here, so far below\nStaring up from the bottom, up from the bottom\nI try escaping, but there's nowhere to go\nStaring up from the bottom, up from the bottom\n\nEverybody out, that devil is coming\nPoison on his lips and his words mean nothing\nCold like a mountaintop, father never loved him\nMama said he's bad enough times that it sunk in\nEverybody out, that devil is coming\nPromise you the world, but he's always bluffing\nBefore you even know, it's a trap you're stuck in\nHe's gone like a ghost, already off running\n\nYou keep me waiting down here, so far below\nStaring up from the bottom, up from the bottom\nI try escaping, but there's nowhere to go\nStaring up from the bottom, gotta get out of here\nUp from the bottom, gotta get out of here"
+        },
+        {
+            "title": "Heavy Is The Crown",
+            "artist": "Linkin Park",
+            "album": "From Zero",
+            "genre": "Rock",
+            "releaseYear": 2024,
+            "audioUrl": "https://cdnt-preview.dzcdn.net/api/1/1/2/b/9/0/2b9e007bb116c1b31a5d0b59a85a9971.mp3?hdnea=exp=1746604483~acl=/api/1/1/2/b/9/0/2b9e007bb116c1b31a5d0b59a85a9971.mp3*~data=user_id=0,application_id=42~hmac=f73655f07d7920298a92be7e39a9d192ecf827bb3af7a0c09be6047f3da170c4",
+            "albumImageUrl": "https://cdn-images.dzcdn.net/images/cover/1e8ffbd401303b5693226c12ee0b84fb/1000x1000-000000-80-0-0.jpg",
+            "source": "deezer",
+            "lyrics": "It's pourin' in, you're laid on the floor again\nOne knock at the door and then\nWe both know how the story ends\nYou can't win if your white flag's out when the war begins\nAimin' so high, but swingin' so low\nTryin' to catch fire, but feelin' so cold\nHold it inside and hope it won't show\nI'm sayin' it's not, but inside I know\n\nToday's gonna be the day you notice\n'Cause I'm tired of explainin' what the joke is\n\nThis is what you asked for, heavy is the crown\nFire in the sunrise, ashes rainin' down\nTry to hold it in, but it keeps bleedin' out\nThis is what you asked for, heavy is the\nHeavy is the crown\n\nTurn to run, now look what it's become\nOutnumbered, ten to one\nBack then, should've bit your tongue\n'Cause there's no turnin' back this path once it's begun\nYou're already on that list\nSay you don't want what you can't resist\nWavin' that sword when the pen won't miss\nWatch it all fallin' apart like this\n\nThis is what you asked for, heavy is the crown\nFire in the sunrise, ashes rainin' down\nTry to hold it in, but it keeps bleedin' out\nThis is what you asked for, heavy is the\nHeavy is the crown\n\nToday's gonna be the day you notice\n'Cause I'm tired of explainin' what the joke is\nThis is what you asked for\n\nThis is what you asked for, heavy is the crown\nFire in the sunrise, ashes rainin' down\nTry to hold it in, but it keeps bleedin' out\nThis is what you asked for, heavy is the\nHeavy is the crown\n\nHeavy is the crown\nHeavy is the\nHeavy is the crown"
+        }
+    ]
 }
