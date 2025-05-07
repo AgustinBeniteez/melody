@@ -3,11 +3,16 @@
 :root {
     --primary-color: #000;
     --secondary-color: #fff;
-    --background-color: #967171;
-    --section-clolor: #4F2F2F;
-    --button-color: #D98888;
-    --item-list:#905959;
-    --font-color:#1f1414;
+    --background-color: #121212;
+    --section-clolor: #212121;
+    --button-color: #303030;
+    --item-list: #424242;
+    --buscador: #424242;
+    --font-color: #e0e0e0;
+    --font-secondary-color: #818181;
+    --font-tertiary-color: #424242;
+    /* --------fuente-------*/
+    --fuente-text: "Lexend", Arial, Helvetica, sans-serif;
 }
 
 * {
@@ -55,7 +60,7 @@ ul {
     padding-left: 30px;
 }
 a {
-    color: #2626a4;
+    color: var(--font-color);
 }
 
 
@@ -134,11 +139,11 @@ details {
     font-weight: bold;
     font-size: 18px;
     margin-bottom: 10px;
-    color: #c28f8f;
+    color: var(--font-color);
   }
 
   details p {
-    color: #b38787;
+    color: var(--font-color);
   }
   
   summary::marker {
