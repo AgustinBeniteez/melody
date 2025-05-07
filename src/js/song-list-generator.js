@@ -14,23 +14,20 @@ fetch("/src/data/data.json")
       songElement.id = `song-${song.title}`;
 
       songElement.innerHTML = `
-          <img src="${song.albumImageUrl}" alt="${song.title}">
+          <img src="${ song.albumImageUrl ? song.albumImageUrl : "/src/img/thumbnails/thumbnails_default.webp" }" alt="${song.title}">
           <div class="song-details">
             <h2>${song.title}</h2>
-            <p><i class="fa-solid fa-microphone-lines" style="padding-left:2px;"></i> ${
-              song.artist
-            }</p>
+            <p><i class="fa-solid fa-microphone-lines" style="padding-left:2px;"></i>
+            ${song.artist}</p>
             <p><i class="fa-solid fa-compact-disc"></i> ${song.album}</p>
           </div>
           <div class="song-duration">
-            <p><i class="fa-solid fa-clock"></i> ${
-              song.duration ? song.duration : "0:00"
-            }</p>
+            <p><i class="fa-solid fa-clock"></i>
+            ${song.duration ? song.duration : "0:00"}</p>
           </div>
           <div class="song-releaseYear">
-            <p> <i class="fa-solid fa-calendar-days"></i> ${
-              song.releaseYear
-            }</p>
+            <p> <i class="fa-solid fa-calendar-days"></i>
+            ${song.releaseYear ? song.releaseYear : "????"}</p>
           </div>
         `;
 
@@ -38,19 +35,17 @@ fetch("/src/data/data.json")
       //--- cambia la infomacion del reproductor
       function changeSongInfo(song) {
         //---- obtengo los elementos del html
-        const infoSongSide = document.getElementById(
-          "thumbnails-info-container"
-        );
-        const infoSongTitle =
-          document.getElementsByClassName("song-info-title");
-        const infoSongArtist =
-          document.getElementsByClassName("song-info-artist");
+        const infoSongSide = document.getElementById("thumbnails-info-container");
+        const infoSongTitle = document.getElementsByClassName("song-info-title");
+        const infoSongArtist = document.getElementsByClassName("song-info-artist");
         const lyricsContainer = document.getElementById("lyrics");
+        const totalTime = document.getElementById("total-time");
         //---- remplazo el contenido por el de la cancion seleccionada
         infoSongSide.src = song.albumImageUrl;
         infoSongTitle[0].textContent = song.title;
         infoSongArtist[0].textContent = song.artist;
         lyricsContainer.textContent = song.lyrics;
+        totalTime.textContent = song.duration;
       }
       //⭕-------- Listener ------------
       // agrega event listener para el clic

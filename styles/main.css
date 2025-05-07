@@ -182,9 +182,10 @@ main {
 }
 
 #search input{
-   padding: 15px 10px 15px 10px;
+   font-size: 1rem;
+   padding: 15px 10px 15px 15px;
    height: 30px;
-   width: 70%;
+   width: 50%;
    border-radius: 15px;
    margin: 10px;
    background-color: var(--buscador);
@@ -195,6 +196,17 @@ main {
 
 #search input::placeholder {
    color: var(--font-color);
+}
+
+#nav-songs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+#separador-nav {
+   width: 40%;
 }
 
 #song-info-text .song-info-title{
