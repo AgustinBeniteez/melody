@@ -165,7 +165,7 @@ main {
 }
 
 #search input{
-   padding: 10px 5px 10px 5px;
+   padding: 15px 10px 15px 10px;
    height: 30px;
    width: 70%;
    border-radius: 15px;
@@ -212,3 +212,53 @@ main {
  #lyrics-container::-webkit-scrollbar-thumb:hover {
     background: var(--item-list);
  }
+
+ /* Estilos de la barra de progreso */
+ #control-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+ #progress-bar {
+    width: 60vw;
+    height: 10px;
+    background-color: var(--buscador);
+    border-radius: 5px;
+    margin: 10px 0;
+  }
+
+  #progress {
+    height: 100%;
+    background-color: var(--button-color);
+    border-radius: 5px;
+    width: 0;
+  }
+
+#progress-bar-time{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   width: 60vw;
+   color: var(--font-secondary-color);
+   margin: 10px 10px 0 0;
+}
+
+#controls {
+    font-size: 1.5rem !important;
+    color: var(--font-secondary-color);
+    width: 60vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+#controls button{
+   background-color: transparent;
+   border: none;
+   font-size: 1.5rem;
+   color: var(--font-secondary-color);
+}

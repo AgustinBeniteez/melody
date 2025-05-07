@@ -33,8 +33,43 @@
                 </section>
             </div>
         </section>
-        <section id="account-info" class="item"></section>
-        <section id="control-panel" class="item"></section>
+        <section id="account-info" class="item">
+            <!-- Apartado de cuenta y ajustes ⚙️-->
+        </section>
+        <section id="control-panel" class="item">
+            <div id="controls">
+                <!-- Favoritos-->
+                <button>
+                    <i class="fa-solid fa-star"></i>
+                </button>
+                <!-- antes-->
+                <button>
+                    <i class="fa-solid fa-backward-step"></i>
+                </button>
+                <!-- play or stop-->
+                <button>
+                    <i id="play-pause" class="fa-solid fa-play"></i>
+                </button>
+                <!-- suguiente-->
+                <button>
+                    <i class="fa-solid fa-step-forward"></i>
+                </button>
+                <!-- bucle-->
+                <button>
+                    <i class="fa-solid fa-repeat"></i>
+                </button>
+                
+            </div>
+            <div id="progress-bar">
+                <div id="progress-bar-container">
+                    <div id="progress-bar-fill"></div>
+                </div>
+                <div id="progress-bar-time">
+                    <span id="current-time">00:00</span>
+                    <span id="total-time">00:00</span>
+                </div>
+            </div>
+        </section>
     </main>
     <script src="/src/js/song-list-generator.js"></script>
     <script src="/src/js/song.js"></script>
