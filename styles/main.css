@@ -95,6 +95,19 @@
     --font-tertiary-color: #949072;
 }
 
+.tema-verde {
+    --primary-color: #000;
+    --secondary-color: #fff;
+    --background-color: #a4c994;
+    --section-clolor: #7da066;
+    --button-color: #5f7c4b;
+    --item-list:#b2d8a3;
+    --buscador:#b2d8a3;
+    --font-color:#272727;
+    --font-secondary-color: #252723;
+    --font-tertiary-color: #8db673;
+}
+
 .tema-rosa  {
     --primary-color: #000;
     --secondary-color: #fff;
