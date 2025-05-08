@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Not Found</title>
+    <link rel="stylesheet" href="/styles/themes.css">
+    <style>
+        :root {
+            --primary-color: #000;
+            --secondary-color: #fff;
+            --background-color: #121212;
+            --section-clolor: #212121;
+            --button-color: #303030;
+            --item-list: #424242;
+            --buscador: #424242;
+            --font-color: #e0e0e0;
+            --font-secondary-color: #818181;
+            --font-tertiary-color: #424242;
+            /* --------fuente-------*/
+            --fuente-text: "Lexend", Arial, Helvetica, sans-serif;
+        }
+        body {
+            background-color: var(--background-color);
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: var(--section-clolor);
+            border-radius: 10px;
+            padding: 50px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .error-container {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: var(--font-color);
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: var(--font-secondary-color);
+        }
+        a {
+            text-decoration: none;
+            color: var(--font-color);
+            font-weight: bold;
+            padding: 10px 20px;
+            background-color: var(--button-color);
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: var(--font-color);
+                color: var(--background-color);
+                transition: background-color 0.3s ease;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="error-container">
+            <img src="/src/img/logo/favicon.ico" alt="logo">
+            <h1>404 Not Found</h1>
+            <p>Lo sentimos, la página que estás buscando no existe.</p>
+            <p>Por favor, verifica la URL o haz clic en el botón para regresar a la página principal.</p>
+            <a href="/index.html" class="btn">Regresar a la página principal</a>
+        </div>
+    </div>
+</body>
+</html>

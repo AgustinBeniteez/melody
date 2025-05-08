@@ -54,7 +54,7 @@ main {
 }
 #song-list #header-main-page{
     display: flex;
-    background-color: var(--font-tertiary-color);
+    background-color: var(--item-list);
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -237,18 +237,18 @@ nav a {
 }
 
 #song-list::-webkit-scrollbar-track {
-   background: transparent;
-
+    background: var(--item-list);
+    border-radius: 10px;
 }
 
 #song-list::-webkit-scrollbar-thumb {
-   background: var(--item-list);
+   background: var(--button-color);
    border-radius: 10px;
    transition: all 0.5s;
 }
 
 #song-list::-webkit-scrollbar-thumb:hover {
-   background: var(--button-color);
+   background: var(--font-secondary-color);
    transition: ease-in.0.4s;
 }
 
