@@ -14,17 +14,47 @@
 </head>
 <body>  <!-- poner class="tema-magenta" o el tema que sea para cambiar el tema-->
     <main>
+        <!-- Lista de canciones -->
         <section id="song-list" class="item">
-            <div id="search">
-                <input type="text" placeholder="buscar..."><i class="fa-solid fa-magnifying-glass"></i>
-                <nav id="nav-songs">
-                    | <span>Titulo <i class="fa-solid fa-music"></i></span> | <span id="separador-nav"></span> | <span>duration <i class="fa-solid fa-clock"></i></span> | <span>release year <i class="fa-solid fa-calendar-days"></i></span>|
-                </nav>
-            </div>
-            <div id="song-list-content">
-                <!-- Aqui van las canciones -->
-            </div>
+            <section id="search-main-page">
+                <div id="search">
+                    <input type="text" placeholder="buscar..."><i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <article id="albums-list">
+                    <!-- ALBUMS LIST -->
+                        <div id="album-1" class="album">
+                            <img src="/src/img/thumbnails/thumbnails_default.webp" alt="imagen no encontrada">
+                            <h2>Album 1</h2>
+                            <h3>Artista</h3>
+                        </div>
+                        <div id="album-2" class="album">
+                            <img src="/src/img/thumbnails/thumbnails_default.webp" alt="imagen no encontrada">
+                            <h2>Album 1</h2>
+                            <h3>Artista</h3>
+                        </div>
+                        <div id="album-3" class="album">
+                            <img src="/src/img/thumbnails/thumbnails_default.webp" alt="imagen no encontrada">
+                            <h2>Album 1</h2>
+                            <h3>Artista</h3>
+                        </div>
+                        <div id="album-4" class="album">
+                            <img src="/src/img/thumbnails/thumbnails_default.webp" alt="imagen no encontrada">
+                            <h2>Album 1</h2>
+                            <h3>Artista</h3>
+                        </div>
+                </article>
+                <article id="list-container">
+                    <nav id="nav-songs">
+                        | <span>Titulo <i class="fa-solid fa-music"></i></span> | <span id="separador-nav"></span> | <span>duration <i class="fa-solid fa-clock"></i></span> | <span>release year <i class="fa-solid fa-calendar-days"></i></span>|
+                    </nav>
+                    <div id="song-list-content">
+                        <!-- Aqui van las canciones -->
+                    </div>
+                </article>
+            </section>
         </section>
+
+        <!-- Informacion de la cancion -->
         <section id="song-info" class="item">
             <div class="song-info-container">
                 <img id="thumbnails-info-container" src="../src/img/thumbnails/thumbnails_default.webp" alt="imagn no encontrada">
@@ -40,9 +70,17 @@
                 </section>
             </div>
         </section>
+
+        <!-- Apartado de cuenta y ajustes -->
         <section id="account-info" class="item">
-            <!-- Apartado de cuenta y ajustes -->
+                <div id="account-info-text">
+                    <img src="/src/img/profiles/profile.svg" alt="profile">
+                    <h2>Account</h2>
+                </div>
+                <button><i class="fa-solid fa-gear"></i></button>
         </section>
+
+        <!-- Panel de control de la cancion -->
         <section id="control-panel" class="item">
             <div id="controls">
                 <!-- Favoritos-->
@@ -81,3 +119,4 @@
     <script src="/src/js/song.js"></script>
 </body>
 </html>
+
