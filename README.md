@@ -1,4 +1,6 @@
 # ESTRUCTURA DE LA WEB 📂
+Todo metido dentro de una carpeta docs/
+esto es solo para que github lo suba como una pagina web.
 
 ## Index  - LANDING PAGE
 
