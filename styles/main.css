@@ -150,6 +150,7 @@ nav a {
 }
 #search{
     color: var(--font-secondary-color);
+    margin-right: 20px;
 }
 /* ----APARTADO DERECHA INFO DE LA CANCION------ */
 #song-info #thumbnails-info-container {

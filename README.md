@@ -1,6 +1,21 @@
+# Melody 🎵
+Melody es un Portal web que te permite escuchar musica en cualquier momento y en cualquier lugar y saber las novedades de la musica.
+
+## Tecnologias 🛠️
+- HTML
+- CSS
+- JavaScript
+- JSON
+- GIT
+
+## DEVELOPERS 👨‍💻
+- [@Agustin Benitez Lopez](https://github.com/Agustinbeniteez)
+- [@Marcos Jimenez García](https://github.com/Trotamundos872)
+- [@Daniel Gómez Ortiz ](https://github.com/DanielG-git)
+- [@Pedro Utrera Marín](https://github.com/Pedrux06)
+
+
 # ESTRUCTURA DE LA WEB 📂
-Todo metido dentro de una carpeta docs/
-esto es solo para que github lo suba como una pagina web.
 
 ## Index  - LANDING PAGE
 
