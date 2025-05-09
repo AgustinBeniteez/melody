@@ -301,22 +301,58 @@ nav a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    padding: 25px;
 }
 
  #progress-bar {
     width: 60vw;
-    height: 10px;
-    background-color: var(--buscador);
+    height: 0;
     border-radius: 5px;
-    margin: 10px 0;
+    margin: 10px;
   }
 
-  #progress {
+  #progress-bar-input {
+    width: 100%;
     height: 100%;
-    background-color: var(--button-color);
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: var(--buscador);
+    border-radius: 15px;
+    cursor: pointer;
+  }
+
+  #progress-bar-input::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    background-color: var(--buscador);
     border-radius: 5px;
-    width: 0;
+    height: 8px;
+    cursor: grab;
+  }
+
+  #progress-bar-input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    background: var(--font-color);
+    border-radius: 50%;
+    margin-top: -4px;
+    cursor: grab;
+  }
+
+  #progress-bar-input::-moz-range-track {
+    background-color: var(--buscador);
+    border-radius: 5px;
+    height: 8px;
+    cursor: grab;
+  }
+
+  #progress-bar-input::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    background: var(--font-color);
+    border-radius: 50%;
+    border: none;
+    cursor: grab;
   }
 
 #progress-bar-time{
@@ -446,21 +482,24 @@ nav a {
 
 #btn-back {
     position: absolute;
+    display: flex;
     top: 10px;
     right: 10px;
-    height: 40px;
+    border-radius: 50%;
+    margin: 10px;
     background-color: transparent;
     border: none;
-    font-size: 2rem;
+    font-size: 2.2rem;
     color: var(--font-color);
-    transition: all 0.5s;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: ease-in-out 0.3s;
 
     &:hover{
-        color: var(--button-color);
-        transform: scale(1.15);
-        /* Rotacion de la rueda de ajustes */
-        transform:scale(1.15);
-        transition: all 0.5s;
+        background-color: var(--salir-cancelar-hover);
+        transform: rotate(180deg);
+        transition: ease-in-out 0.3s;
         cursor: pointer;
     }
 }

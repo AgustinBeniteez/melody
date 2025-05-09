@@ -117,7 +117,7 @@ function cargarAlbum(albumNumber) {
       <h2>${ALBUMS_LIST[albumNumber][0]}</h2>
       <h3>${ALBUMS_LIST[albumNumber][2]}</h3>
     </div>
-    <button id="btn-back"><i class="fa-solid fa-circle-arrow-left"></i> Back</button>
+    <button id="btn-back"> <i class="fa-solid fa-circle-xmark"></i> </button>
     </header>
     <nav id="nav-songs">
        | <span>Titulo <i class="fa-solid fa-music"></i></span> | <span id="separador-nav"></span> | <span>duration <i class="fa-solid fa-clock"></i></span> | <span>release year <i class="fa-solid fa-calendar-days"></i></span>|
@@ -209,4 +209,6 @@ const btnSettings = document.getElementById("btn-settings");
 btnSettings.addEventListener("click", function() {
     ocultarModal();
 });
+
+
 

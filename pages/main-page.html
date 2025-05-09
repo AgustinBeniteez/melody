@@ -19,7 +19,7 @@
                     <img src="/src/img/logo/favicon.ico" alt="logo">
                     <a href="/index.html">Home</a>
                     <a href="/pages/about.html">About Us</a>
-                    <a href="/pages/blog.html">Newsletter</a>
+                    <a href="/pages/blog.html">Blog</a>
                 </nav>
                 <div id="search">
                     <input type="text" placeholder="buscar..."><i class="fa-solid fa-magnifying-glass"></i>
@@ -112,9 +112,7 @@
                 </button>
             </div>
             <div id="progress-bar">
-                <div id="progress-bar-container">
-                    <div id="progress-bar-fill"></div>
-                </div>
+                <input type="range" min="0" max="100" value="0" step="1" id="progress-bar-input">
                 <div id="progress-bar-time">
                     <span id="current-time">00:00</span>
                     <span id="total-time">00:00</span>
@@ -126,45 +124,22 @@
     <section id="settings-modal" class="hidden">
         <section id="settings-section">
             <button id="btn-exit-modal" onclick="ocultarModal()"><i class="fa-regular fa-circle-xmark"></i></button>
-            <h2>Settings</h2>
-            <article id="config-themes">
-                <h3>Themes</h3>
-                <button class="btn-theme">
-                    <img src="/src/img/main/main(7).png" alt="theme-">
-                </button>
-                <button class="btn-theme">
-                    <img src="/src/img/main/main(8).png" alt="theme-">
-                </button>
-                <button class="btn-theme">
-                    <img src="/src/img/main/main(1).png" alt="theme-">
-                </button>
-                <button class="btn-theme">
-                    <img src="/src/img/main/main(3).png" alt="theme-">
-                </button>
-                <button class="btn-theme">
-                    <img src="/src/img/main/main(4).png" alt="theme-">
-                </button>
-                <button class="btn-theme">
-                    <img src="/src/img/main/main(5).png" alt="theme-">
-                </button>
-                <button class="btn-theme">
-                    <img src="/src/img/main/main(6).png" alt="theme-">
-                </button>
-                <button class="btn-theme">
-                    <img src="/src/img/main/main(2).png" alt="theme-">
-                </button>
-                <button class="btn-theme">
-                    <img src="/src/img/main/main(9).png" alt="theme-">
-                </button>
-                <button class="btn-theme">
-                    <img src="/src/img/main/main(10).png" alt="theme-">
-                </button>
-            </article>
+            <div id="appearance-container">
+                <h2>Appearance <i class="fa-solid fa-pencil"></i></h2>
+                <p><i class="fa-solid fa-eye"></i> Preview of the appearance of the application.</p>
+                <img id="appearance-preview" src="/src/img/main/preview-tema-default.png" alt="Appearance preview">
+            </div>
+            <section id="config-articles-container">
+                <h3>Themes <i class="fa-solid fa-palette"></i> </h3>
+                <article id="config-themes">
+                    <!-- Buttons de themes -->
+                </article>
+            </section>
         </section>
     </section>
 
+    <script src="/src/js/settings.js"></script>
     <script src="/src/js/song-list-generator.js"></script>
-    <script src="/src/js/song.js"></script>
 </body>
 </html>
 
