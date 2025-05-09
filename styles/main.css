@@ -266,8 +266,9 @@ nav a {
    width: 40%;
 }
 
-#song-info-text .song-info-title{
-   font-size: 1.3rem;
+#song-info-text .song-info-title {
+    font-size: 1.3rem;
+    color: var(--font-color);
 }
 #song-info-text .song-info-artist{
     font-size: 0.9rem;
