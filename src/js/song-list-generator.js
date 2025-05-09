@@ -84,6 +84,14 @@ function limpiarAlbum() {
   }
 }
 
+function ocultarModal(objetoModal){
+  if (objetoModal.classList.contains("hidden")) {
+    objetoModal.classList.add("hidden")
+  }else{
+    songList.classList.remove("hidden");
+  }
+}
+
 
 //--------- FUNCIONES PARA CARGAR ALBUM --------//
 function cargarAlbum(albumNumber) {
@@ -194,3 +202,8 @@ function cargarCanciones(song, songElement) {
   });
 }
 
+//---------- LISTENER DEL MODAL SETTINGS --------------
+const btnSettings = document.getElementById("settings-modal");
+btnSettings.addEventListener("click", function() {
+    ocultarModal(btnSettings);
+});

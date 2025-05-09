@@ -1,8 +1,24 @@
+:root {
+    --primary-color: #000;
+    --secondary-color: #fff;
+    --background-color: #121212;
+    --section-color: #212121;
+    --button-color: #303030;
+    --item-list: #424242;
+    --buscador: #424242;
+    --font-color: #e0e0e0;
+    --font-secondary-color: #818181;
+    --font-tertiary-color: #424242;
+    --blur-transparent: #4d4d4d53;
+    /* --------fuente-------*/
+    --fuente-text: "Lexend", Arial, Helvetica, sans-serif;
+}
+
 .tema-claro {
     --primary-color: #000;
     --secondary-color: #fff;
     --background-color: #f5f5f5;
-    --section-clolor: #e0e0e0;
+    --section-color: #e0e0e0;
     --button-color: #8f8f8f;
     --item-list: #c2c2c2;
     --buscador: #adadad;
@@ -15,7 +31,7 @@
     --primary-color: #000;
     --secondary-color: #fff;
     --background-color: #637ae0;
-    --section-clolor: #3f51b5;
+    --section-color: #3f51b5;
     --button-color: #8c9eff;
     --item-list: #5c6bc0;
     --buscador: #5c6bc0;
@@ -28,7 +44,7 @@
     --primary-color: #000;
     --secondary-color: #22083a;
     --background-color: #693f91;
-    --section-clolor: #9c7cd0;
+    --section-color: #9c7cd0;
     --button-color: #664685;
     --item-list: #78519c;
     --buscador: #78519c;
@@ -41,7 +57,7 @@
     --primary-color: #000;
     --secondary-color: #fff;
     --background-color: #b3e5fc;
-    --section-clolor: #81d4fa;
+    --section-color: #81d4fa;
     --button-color: #4fc3f7;
     --item-list: #56b5e0;
     --buscador: #b3e5fc;
@@ -54,7 +70,7 @@
     --primary-color: #000;
     --secondary-color: #fff;
     --background-color: #967171;
-    --section-clolor: #4F2F2F;
+    --section-color: #4F2F2F;
     --button-color: #D98888;
     --item-list:#905959;
     --buscador:#905959;
@@ -67,7 +83,7 @@
     --primary-color: #dfd09f;
     --secondary-color: #fff;
     --background-color: #ecddbc;
-    --section-clolor: #bdae92;
+    --section-color: #bdae92;
     --button-color: #e7dabf;
     --item-list:#ddccad;
     --buscador:#ddccad;
@@ -80,7 +96,7 @@
     --primary-color: #000;
     --secondary-color: #fff;
     --background-color: #a4c994;
-    --section-clolor: #7da066;
+    --section-color: #7da066;
     --button-color: #5f7c4b;
     --item-list:#b2d8a3;
     --buscador:#b2d8a3;
@@ -93,7 +109,7 @@
     --primary-color: #000;
     --secondary-color: #fff;
     --background-color: #e1bee7;
-    --section-clolor: #ce93d8;
+    --section-color: #ce93d8;
     --button-color: #ba68c8;
     --item-list:#e0b0ff;
     --buscador:#e0b0ff;
@@ -106,7 +122,7 @@
     --primary-color: #000;
     --secondary-color: #fff;
     --background-color: #490f23;
-    --section-clolor: #752942;
+    --section-color: #752942;
     --button-color: #5a0f28;
     --item-list: #641835;
     --buscador: #641835;

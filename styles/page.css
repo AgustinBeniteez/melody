@@ -4,7 +4,7 @@
     --primary-color: #000;
     --secondary-color: #fff;
     --background-color: #967171;
-    --section-clolor: #4F2F2F;
+    --section-color: #4F2F2F;
     --button-color: #D98888;
     --item-list:#905959;
     --font-color:#1f1414;
@@ -20,7 +20,7 @@
 }
 
 body {
-    background-color: var(--section-clolor);
+    background-color: var(--section-color);
     font-family: var(--fuente-text);
 }
 

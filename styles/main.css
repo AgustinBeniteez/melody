@@ -3,20 +3,7 @@
 
 /* ----- THEMES -----*/
 /* ----- Asignacion Variables de colores -----*/
-:root {
-    --primary-color: #000;
-    --secondary-color: #fff;
-    --background-color: #121212;
-    --section-clolor: #212121;
-    --button-color: #303030;
-    --item-list: #424242;
-    --buscador: #424242;
-    --font-color: #e0e0e0;
-    --font-secondary-color: #818181;
-    --font-tertiary-color: #424242;
-    /* --------fuente-------*/
-    --fuente-text: "Lexend", Arial, Helvetica, sans-serif;
-}
+@import url('/styles/themes.css');
 
 /* ----- UTILIDAD PARA OCULTAR EL CONTENIDO -----*/
 .hidden {
@@ -129,7 +116,7 @@ nav a {
 }
 
 #account-info{
-    background-color: var(--section-clolor);
+    background-color: var(--section-color);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -137,15 +124,15 @@ nav a {
 }
 
 #control-panel {
-    background-color: var(--section-clolor);
+    background-color: var(--section-color);
 }
 
 #song-list {
-   background-color: var(--section-clolor);
+   background-color: var(--section-color);
 }
 
 #song-info {
-    background-color: var(--section-clolor);
+    background-color: var(--section-color);
 
 }
 #search{
