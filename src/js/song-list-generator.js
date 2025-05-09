@@ -84,11 +84,13 @@ function limpiarAlbum() {
   }
 }
 
-function ocultarModal(objetoModal){
-  if (objetoModal.classList.contains("hidden")) {
-    objetoModal.classList.add("hidden")
+//--------- FUNCIONES PARA OCULTAR/MOSTRAR MODAL --------//
+function ocultarModal(){
+  const modalSettings = document.getElementById("settings-modal")
+  if (modalSettings.classList.contains("hidden")) {
+      modalSettings.classList.remove("hidden");
   }else{
-    songList.classList.remove("hidden");
+      modalSettings.classList.add("hidden");
   }
 }
 
@@ -103,7 +105,7 @@ function cargarAlbum(albumNumber) {
     albumSongList.remove();
   }
   
-  // Crear nuevo contenedor de álbum
+  // -----------Crear nuevo contenedor de álbum---------
   albumSongList = document.createElement("article");
   albumSongList.id = "album-song-menu";
   albumSongList.classList.remove("hidden"); // Asegurar que el nuevo álbum sea visible
@@ -204,7 +206,7 @@ function cargarCanciones(song, songElement) {
 
 //---------- LISTENER DEL MODAL SETTINGS --------------
 const btnSettings = document.getElementById("btn-settings");
-const modalSettings = document.getElementById("settings-modal")
 btnSettings.addEventListener("click", function() {
-    ocultarModal(modalSettings);
+    ocultarModal();
 });
+

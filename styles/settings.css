@@ -12,9 +12,11 @@
     justify-content: center;
     align-items: center;
     backdrop-filter: blur(10px);
+    opacity: 1;
 }
 
 #settings-section{
+    position: relative;
     background-color: var(--section-color);
     width: 60%;
     height: 70%;
@@ -32,4 +34,28 @@
 
 .btn-theme img{
     width: 90px;
+}
+
+#btn-exit-modal{
+    position: absolute;
+    display: flex;
+    top: 10px;
+    right: 10px;
+    border-radius: 50%;
+    margin: 10px;
+    background-color: var(--salir-cancelar);
+    border: none;
+    font-size: 1.5rem;
+    color: var(--font-color);
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: ease-in-out 0.3s;
+
+    &:hover{
+        background-color: var(--salir-cancelar-hover);
+        transform: rotate(180deg);
+        transition: ease-in-out 0.3s;
+        cursor: pointer;
+    }
 }

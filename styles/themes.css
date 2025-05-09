@@ -10,6 +10,8 @@
     --font-secondary-color: #818181;
     --font-tertiary-color: #424242;
     --blur-transparent: #4d4d4d53;
+    --salir-cancelar: #892557;
+    --salir-cancelar-hover: #611b3e;
     /* --------fuente-------*/
     --fuente-text: "Lexend", Arial, Helvetica, sans-serif;
 }
