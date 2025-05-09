@@ -360,6 +360,8 @@ nav a {
     align-items: center;
     gap: 20px;
 }
+
+
 #account-info button {
     background-color: transparent;
     border: none;

@@ -203,7 +203,8 @@ function cargarCanciones(song, songElement) {
 }
 
 //---------- LISTENER DEL MODAL SETTINGS --------------
-const btnSettings = document.getElementById("settings-modal");
+const btnSettings = document.getElementById("btn-settings");
+const modalSettings = document.getElementById("settings-modal")
 btnSettings.addEventListener("click", function() {
-    ocultarModal(btnSettings);
+    ocultarModal(modalSettings);
 });
