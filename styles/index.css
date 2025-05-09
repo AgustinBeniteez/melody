@@ -4,7 +4,7 @@
     --primary-color: #000;
     --secondary-color: #fff;
     --background-color: #121212;
-    --section-color: #212121;
+    --section-clolor: #212121;
     --button-color: #303030;
     --item-list: #424242;
     --buscador: #424242;
@@ -23,7 +23,7 @@
 }
 
 body {
-    background-color: var(--section-color);
+    background-color: var(--section-clolor);
     font-family: var(--fuente-text);
 }
 
@@ -46,10 +46,11 @@ header {
     transform: translateX(-50%);
     align-items: center;
     width: 60%;
-    height: 50px;
+    height: auto;
     margin-bottom: 20px;
     background-color: var(--background-color);
     border-radius: 30px;
+
 }
 
 nav {
@@ -58,7 +59,7 @@ nav {
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    margin: 3px 6px 0 6px;
+    margin: 5px;
 }
 
 nav div {
@@ -67,13 +68,14 @@ nav div {
     align-items: center;
     justify-content: center;
     gap:5px;
+
 }
 
 nav a {
     text-decoration: none;
     color: var(--font-color);
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.0rem;
     padding: 10px;
     border-radius: 40px;
     transition: background-color 0.3s ease;
@@ -82,7 +84,7 @@ nav a {
         background-color: var(--button-color);
         transition: background-color 0.3s ease;
         cursor: pointer;
-        color: var(--background-color);
+        color: var(--font-color);
     }
 }
 
@@ -105,7 +107,7 @@ p, h1, h2, h3, ul {
 
 b {color: var(--font-color);}
 
-h1, h3 {
+h1, h2, h3 {
     text-align: center;
 
 }
@@ -116,7 +118,6 @@ ul {
 a {
     color: var(--font-color);
 }
-
 
 h1 {
     margin: 0px;
@@ -168,7 +169,6 @@ h1 {
     margin-top: -20px;
     scale: 1.0;
     transition-duration: 3s;
-    
 }
 
 .main-image-container img:hover {
@@ -180,11 +180,10 @@ h1 {
 details {
     padding: 30px;
     border-radius: 20px;
-    background-color: var(--section-color);
+    background-color: var(--section-clolor);
     margin: auto;
-    width: 1050px;
+    max-width: 1050px;
     margin-bottom: 20px;
-
     box-shadow: rgba(17, 17, 26, 0.1) 0px 7px 5px;
   }
   
@@ -203,3 +202,28 @@ details {
   summary::marker {
     content: "";
   }
+
+  footer {
+    padding: 0px 10px 10px 10px;
+  }
+
+  .img-container-showcase {
+    display: flex;
+    margin: auto;
+    max-width: 2000px;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+  }
+  .img-container-showcase img { 
+    scale: 1.0;
+    transition-duration: 3s;
+}
+  
+
+  .img-container-showcase img:hover { 
+    scale: 1.2;
+    transition-duration: 3s;
+}
