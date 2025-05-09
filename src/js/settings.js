@@ -5,6 +5,9 @@ const THEMES_VARIABLES = "--section-color";
 // guarda el div de temas
 const themesSettings = document.getElementById('config-themes');
 
+//--------- variables de idioma --------//
+const LANGUAGES = ["en", "es"];
+
 // Inicializar el tema predeterminado al cargar la página
 window.addEventListener('load', () => {
     changeTheme(0); // Seleccionar el tema predeterminado (índice 0)
