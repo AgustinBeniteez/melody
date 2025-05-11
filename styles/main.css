@@ -10,7 +10,7 @@
     display: none!important;
 }
 
-/* ----- STYLES -----*/
+/* ----- STYLES GENERALES -----*/
 * {
     margin: 0;
     padding: 0;
@@ -92,7 +92,7 @@ nav a {
 .item{
     border-radius: 15px;
 }
-
+/* -----SECTIONS PRINCIPALES DEL GRID class.items--------  */
 .item:nth-child(1) {
     grid-area: 1 / 1 / 2 / 2;
     grid-column: 1 / 5;
@@ -123,22 +123,15 @@ nav a {
     justify-content: space-around;
 }
 
-#control-panel {
-    background-color: var(--section-color);
-}
-
-#song-list {
+#song-list, #song-info, #control-panel {
    background-color: var(--section-color);
 }
 
-#song-info {
-    background-color: var(--section-color);
-
-}
 #search{
     color: var(--font-secondary-color);
     margin-right: 20px;
 }
+
 /* ----APARTADO DERECHA INFO DE LA CANCION------ */
 #song-info #thumbnails-info-container {
     width: 80%;

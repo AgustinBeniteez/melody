@@ -7,10 +7,12 @@
     <link rel="shortcut icon" href="/src/img/logo/favicon.ico" type="image/x-icon">
     <!-- Idea dependiendo de la cacion en reproduccion cambiar el tituo con el nombre de la cacion -->
     <title>Reproductor Melody</title>
+    <!-- Import de Styles css-->
     <link rel="stylesheet" href="/styles/main.css">
     <link rel="stylesheet" href="/styles/settings.css">
+    <link rel="stylesheet" href="/styles/mediaquery/main-mediaquery.css">
 </head>
-<body>  <!-- poner class="tema-magenta" o class="tema-claro" o el tema que sea para cambiar el tema-->
+<body>  <!-- Se pone class="tema-magenta" o class="tema-claro" o el tema que sea para cambiar el tema | FUNCIONALIDAD con JS de Settings-->
     <main>
         <!-- Lista de canciones -->
         <section id="song-list" class="item">
@@ -52,7 +54,7 @@
                 </article>
                 <article id="list-container">
                     <nav id="nav-songs">
-                        | <span>Titulo <i class="fa-solid fa-music"></i></span> | <span id="separador-nav"></span> | <span>duration <i class="fa-solid fa-clock"></i></span> | <span>release year <i class="fa-solid fa-calendar-days"></i></span>|
+                        | <span>Titulo <i class="fa-solid fa-music"></i></span> | <span id="separador-nav"></span>  <span id="span-duration">| duration <i class="fa-solid fa-clock"></i> | </span>  <span id="span-year">| release year <i class="fa-solid fa-calendar-days"></i> |</span>
                     </nav>
                     <div id="song-list-content">
                         <!-- Aqui van las canciones -->
@@ -124,25 +126,26 @@
     <section id="settings-modal" class="hidden">
         <section id="settings-section">
             <button id="btn-exit-modal" onclick="ocultarModal()"><i class="fa-regular fa-circle-xmark"></i></button>
-            <div id="appearance-container">
+            <article id="appearance-container">
                 <h2>Appearance <i class="fa-solid fa-pencil"></i></h2>
                 <p><i class="fa-solid fa-eye"></i> Preview of the appearance of the application.</p>
                 <img id="appearance-preview" src="/src/img/main/preview-tema-default.png" alt="Appearance preview">
-            </div>
-            <section id="config-articles-container">
+            </article>
+            <article id="config-articles-container">
                 <h3>Themes <i class="fa-solid fa-palette"></i> </h3>
                 <article id="config-themes">
                     <!-- Buttons de themes -->
                 </article>
-                <article id="config-languaje">
-                    <!-- Buttons de idiomas -->
-                    <h3>Language <i class="fa-solid fa-language"></i></h3>
-                    <select id="language-selector">
-                        <option value="en">English</option>
-                        <option value="es">Español</option>
-                    </select>
-                </article>
-            </section>
+
+            </article>
+            <article id="config-languaje">
+                <!-- Buttons de idiomas -->
+                <h3>Language <i class="fa-solid fa-language"></i></h3>
+                <select id="language-selector">
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                </select>
+            </article>
         </section>
     </section>
 

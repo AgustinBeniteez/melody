@@ -6,14 +6,15 @@ const THEMES_VARIABLES = "--section-color";
 const themesSettings = document.getElementById('config-themes');
 
 //--------- variables de idioma --------//
-const LANGUAGES = ["en", "es"];
+const LANGUAGES = ["en", "es"]; //Por hacer (solo esta puesto el HTML no el Js)
 
+//----------- CARGA TEMAS ------------//
 // Inicializar el tema predeterminado al cargar la página
 window.addEventListener('load', () => {
     changeTheme(0); // Seleccionar el tema predeterminado (índice 0)
     selecBtnTheme(0); // Marcar el botón del tema predeterminado como seleccionado
 });
-
+//----------- CARGAR BOTONES DE TEMAS ------------//
 for (let i = 0; i < NUMERO_DE_THEMES; i++) {
         // crea un boton de tema
     const buttonThemes = document.createElement('button');

@@ -1,0 +1,90 @@
+/* ----- THEMES -----*/
+/* ----- Asignacion Variables de colores -----*/
+@import url('/styles/themes.css'); /* No se si es necesario */
+
+/* ----- MEDIA QUERIES -----*/
+
+@media screen and (max-width: 919px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: 
+        "control-panel"
+        "song-info"
+        "song-list"
+        "account-info";
+        gap: 5px;
+        margin: 5px 10px 5px 10px  ;
+
+    }
+
+    .item:nth-child(1) {
+        grid-area: song-list;
+    }
+
+    .item:nth-child(2) {
+        grid-area: song-info;
+        width: 100%;
+    }
+
+    .item:nth-child(3) {
+        grid-area: control-panel;
+    }
+
+    .item:nth-child(4) {
+        grid-area: account-info;
+    }
+
+    #song-info {
+      display: none;
+    }
+
+    #account-info {
+        width: 96dvw;
+    }
+    #song-list {
+      width: 96dvw;
+  
+  }
+
+    #lyrics-container {
+      display: none;
+    }
+
+    #control-panel {
+        height: 120px;
+        width: 96dvw;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .song-releaseYear{
+        display: none;
+    }
+    .song-duration{
+        right: 5%;
+    }
+
+    #span-year{
+        display: none;
+    }
+
+    #album-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .song-duration{
+        display: none;
+    }
+    #span-duration{
+        display: none;
+    }
+
+
+}
