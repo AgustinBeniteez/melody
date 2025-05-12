@@ -1,0 +1,118 @@
+#login-modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 12;
+    background-color: var(--blur-transparent);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    opacity: 1;
+  }
+
+  .modal-content {
+    height: 80dvh;
+    display: flex;
+    position: relative;
+    width: 700px;
+    background-color: var(--item-list);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+  #account-info-text {
+    transition: ease-in-out 0.3s;
+  
+    &:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: ease-in-out 0.3s;
+  }
+  }
+
+#logo-img{
+  width: 200px;
+  height: 200px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 2rem;
+  color: var(--font-color);
+  cursor: pointer;
+  background-color: transparent;
+  transition: ease-in-out 0.3s;
+  border: none;
+
+  &:hover {
+    transform: rotate(180deg);
+    transition: ease-in-out 0.3s;
+  }
+}
+
+
+#account-login button{
+  font-family: var(--fuente-text);
+  padding: 10px 20px;
+  background-color: var(--button-color);
+  color: var(--font-color);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+
+  &:hover {
+    background-color: var(--item-list);
+    transform: scale(1.05);
+    transition: ease-in-out 0.3s;
+    color: var(--font-color);
+  }
+}
+
+#login-form, #register-form {
+  margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#login-form input, #register-form input {
+    padding: 10px;
+    font-family: var(--fuente-text);
+    border: 1px solid var(--font-color);
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.modal-content h2{
+    font-size: 3rem;
+    color: var(--font-color);
+}
+.btn-submit{
+    font-family: var(--fuente-text);
+    padding: 10px 20px;
+    background-color: var(--button-color);
+    color: var(--font-color);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+
+    &:hover {
+        background-color: var(--section-color);
+        transform: scale(1.05);
+        transition: ease-in-out 0.3s;
+        color: var(--font-color);
+    }
+}

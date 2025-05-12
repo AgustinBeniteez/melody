@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="/styles/main.css">
     <link rel="stylesheet" href="/styles/settings.css">
     <link rel="stylesheet" href="/styles/mediaquery/main-mediaquery.css">
+    <link rel="stylesheet" href="/styles/login.css">
+
 </head>
 <body>  <!-- Se pone class="tema-magenta" o class="tema-claro" o el tema que sea para cambiar el tema | FUNCIONALIDAD con JS de Settings-->
     <main>
@@ -54,7 +56,7 @@
                 </article>
                 <article id="list-container">
                     <nav id="nav-songs">
-                        | <span>Titulo <i class="fa-solid fa-music"></i></span> | <span id="separador-nav"></span>  <span id="span-duration">| duration <i class="fa-solid fa-clock"></i> | </span>  <span id="span-year">| release year <i class="fa-solid fa-calendar-days"></i> |</span>
+                        | <span>Titulo <i class="fa-solid fa-music"></i> </span> | <span id="separador-nav"></span> <span id="span-duration">| duration <i class="fa-solid fa-clock"></i> | </span>  <span id="span-year">| release year <i class="fa-solid fa-calendar-days"></i> |</span>
                     </nav>
                     <div id="song-list-content">
                         <!-- Aqui van las canciones -->
@@ -62,7 +64,6 @@
                 </article>
             </section>
         </section>
-
         <!-- Informacion de la cancion -->
         <section id="song-info" class="item">
             <div class="song-info-container">
@@ -82,7 +83,12 @@
 
         <!-- Apartado de cuenta y ajustes -->
         <section id="account-info" class="item">
-                <div id="account-info-text">
+                <div id="account-login">
+                    <button onclick="openLoginModal('login')" id="btn-login" class="btn-login-register">Login</button>
+                    <button onclick="openLoginModal('register')" id="btn-register" class="btn-login-register">Register</button>
+                </div>
+
+                <div id="account-info-text" class="hidden">
                     <img src="/src/img/profiles/profile.svg" alt="profile">
                     <h2>Account</h2>
                 </div>
@@ -151,6 +157,8 @@
 
     <script src="/src/js/settings.js"></script>
     <script src="/src/js/song-list-generator.js"></script>
+    <script src="/src/js/login.js"></script>
+
 </body>
 </html>
 
