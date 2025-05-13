@@ -36,9 +36,9 @@ Melody es un Portal web que te permite escuchar musica en cualquier momento y en
 
 - Pagina donde se muestra los terminos y condiciones de uso de Melody.
 
-## newsletter - NEWSLETTER
+## Blog - BLOG
 
-- Pagina donde se muestra el formulario de newsletter de Melody.
+- Pagina donde se muestra el BLOG de Melody.
 - y una navegacion donde podras ir a diferentes posts de Melody
 con algunas noticias etc...
 - poder buscar por tema de posts.
