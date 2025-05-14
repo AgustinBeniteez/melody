@@ -66,6 +66,18 @@ nav a {
         color: var(--font-color);
     }
 }
+
+#btn-nav-news {
+    background-color: var(--salir-cancelar);
+
+    &:hover {
+        background-color: var(--salir-cancelar-hover);
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+        color: var(--font-color);
+    }
+}
+
 #search input{
     font-size: 1rem;
     padding: 15px 10px 15px 15px;

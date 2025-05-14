@@ -49,6 +49,10 @@ h2 {
     padding: 10px;
     transition: background-color 0.3s ease;
     margin-top: 10px;
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .contributor-data button:hover {
