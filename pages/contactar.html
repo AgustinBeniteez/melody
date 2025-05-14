@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="/styles/page.css">
 </head>
 <body>
-    <img id="logo-main" src="/src/img/logo/melody-logo.svg" alt="main">
+    <a href="/">
+        <img id="logo-main" src="/src/img/logo/melody-logo.svg" alt="main">
+        </a>
     <header>
         <nav>
             <div id="home-melody">
@@ -28,7 +30,21 @@
     <main>
 
         <h1>Contactanos</h1>
-       
+        <form action="/my-handling-form-page" method="post">
+            <p>
+              <label for="name" >Nombre:</label>
+              <input type="text" id="name" name="user_name" placeholder="Ej: Pepito de los Palotes"/>
+            </p>
+            <p>
+              <label for="mail">Email:</label>
+              <input type="email" id="mail" name="user_email" placeholder="Ej: pepito@palotes.com"/>
+            </p>
+            <p><label for="msg">Mensaje:</label></p>
+            
+              <textarea id="msg" name="user_message" placeholder="Tu mensaje Aqui"></textarea>
+                <br>
+              <input type="submit" id="submit"/>
+          </form>
       
     </main>
     <footer>
@@ -37,7 +53,7 @@
 
             </div>
             <div class="privacy & about">
-                <a href="/pages/about.html">Sobre Nosotros</a>
+                <a href="/pages/contribuidores.html">Contribuidores</a>
                 <a href="/pages/contactar.html">Contactanos</a>
                 <a href="/pages/terms-&-conditions.html">Terminos Y Condiciones</a>
             </div>

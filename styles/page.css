@@ -2,3 +2,111 @@
 main {
     max-width: 1000px;
 }
+
+h1 {
+    padding-bottom: 50px;
+}
+h2 {
+    padding-bottom: 20px;
+    text-align: left;
+}
+
+.countributor-container {
+    background-color: var(--section-clolor);
+    padding: 10px;
+    border-radius: 25px;
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.countributor-img img {
+    border-radius: 20px;
+    width: 100px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    
+}
+
+.contributor-data {
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.contributor-data p {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 13px;
+}
+
+.contributor-data button, #submit {
+    background-color: var(--button-color);
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 16px;
+    color: var(--secondary-color);
+    font-weight: bold;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.contributor-data button:hover {
+    background-color: var(--buscador); 
+    transition: background-color 0.3s ease;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+
+#name, #mail, #msg {
+    font-size: 1rem;
+    padding: 15px 120px 15px 15px;
+    height: 40px;
+    min-width: 300px;
+    border-radius: 20px;
+    margin: 10px;
+    background-color: var(--button-color);
+    color: var(--font-color);
+    border: none;
+    font-family: var(--fuente-text);
+}
+label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#msg {
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+    margin: 0px;
+    margin-top: 10px;
+    max-width: 100%;
+    resize: none;
+
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+
+    .countributor-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contributor-data {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .contributor-data a {
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+    }
+
+}
