@@ -87,12 +87,12 @@
 }
 
 #login-form input, #register-form input {
-    padding: 10px;
-    font-family: var(--fuente-text);
-    border: 1px solid var(--font-color);
-    border-radius: 5px;
-    width: 100%;
-    box-sizing: border-box;
+  padding: 10px;
+  font-family: var(--fuente-text);
+  border: 1px solid var(--font-color);
+  border-radius: 25px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .modal-content h2{
