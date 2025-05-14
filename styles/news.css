@@ -4,7 +4,7 @@
 #main-news {
     display: flex;
     max-width: 1850px;
-    min-height: 90dvb;
+    max-height: 90dvb;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -151,7 +151,6 @@ hr {
     #main-news {
         display: flex;
         max-width: 1850px;
-        min-height: 90dvb;
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: nowrap;
@@ -163,7 +162,6 @@ hr {
     #main-news {
         display: flex;
         max-width: 1850px;
-        min-height: 90dvb;
         flex-direction: column;
         justify-content: space-between;
         flex-wrap: nowrap;
