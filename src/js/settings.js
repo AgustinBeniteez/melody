@@ -9,10 +9,21 @@ const themesSettings = document.getElementById('config-themes');
 const LANGUAGES = ["en", "es"]; //Por hacer (solo esta puesto el HTML no el Js)
 
 //----------- CARGA TEMAS ------------//
-// Inicializar el tema predeterminado al cargar la página
+// Función para obtener el tema guardado
+function getStoredTheme() {
+    return localStorage.getItem('selectedTheme') || 0;
+}
+
+// Función para guardar el tema seleccionado
+function saveTheme(themeIndex) {
+    localStorage.setItem('selectedTheme', themeIndex);
+}
+
+// Inicializar el tema al cargar la página
 window.addEventListener('load', () => {
-    changeTheme(0); // Seleccionar el tema predeterminado (índice 0)
-    selecBtnTheme(0); // Marcar el botón del tema predeterminado como seleccionado
+    const storedTheme = getStoredTheme();
+    changeTheme(parseInt(storedTheme)); // Aplicar el tema guardado
+    selecBtnTheme(parseInt(storedTheme)); // Marcar el botón del tema guardado
 });
 //----------- CARGAR BOTONES DE TEMAS ------------//
 for (let i = 0; i < NUMERO_DE_THEMES; i++) {
@@ -40,6 +51,9 @@ function changeTheme(theme) { // 'theme' es el índice del tema en el array THEM
     // Luego, añadimos la nueva clase de tema seleccionada
     document.body.classList.add(THEMES[theme]);
     cambiarImagenPreview(theme);
+    
+    // Guardar el tema seleccionado
+    saveTheme(theme);
 }
 
 //--------- FUNCION DE CAMBIAR LA IMAGEN DE PREVIEW --------//

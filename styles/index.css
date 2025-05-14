@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@import url("/styles/themes.css");
 
 :root {
     --primary-color: #000;
     --secondary-color: #fff;
     --background-color: #121212;
-    --section-clolor: #212121;
     --button-color: #303030;
     --item-list: #424242;
     --buscador: #424242;
@@ -23,7 +23,7 @@
 }
 
 body {
-    background-color: var(--section-clolor);
+    background-color: var(--section-color);
     font-family: var(--fuente-text);
 }
 
@@ -180,7 +180,7 @@ h1 {
 details {
     padding: 30px;
     border-radius: 20px;
-    background-color: var(--section-clolor);
+    background-color: var(--section-color);
     margin: auto;
     max-width: 1050px;
     margin-bottom: 20px;

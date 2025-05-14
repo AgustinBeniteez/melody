@@ -1,4 +1,3 @@
-
 //--------- INFO ACCOUNT --------//
 // account por defecto ADMIN
 const ACCOUNT_ADMIN = {  //NO es nada seguro pero poder probar cosas

@@ -1,4 +1,5 @@
-@import url(/styles/index.css);
+@import url("/styles/index.css");
+
 main {
     max-width: 1000px;
 }
@@ -12,7 +13,7 @@ h2 {
 }
 
 .countributor-container {
-    background-color: var(--section-clolor);
+    background-color: var(--section-color);
     padding: 10px;
     border-radius: 25px;
     display: flex;

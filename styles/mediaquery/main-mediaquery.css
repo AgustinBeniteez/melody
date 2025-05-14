@@ -76,6 +76,18 @@
         flex-direction: column;
         justify-content: flex-start;
     }
+    #albums-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px;
+        justify-content: center;
+    }
+    #search input {
+        min-width: 275px;
+    }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -84,6 +96,10 @@
     }
     #span-duration{
         display: none;
+    }
+
+    #settings-section {
+        overflow-x: hidden;
     }
 
 
