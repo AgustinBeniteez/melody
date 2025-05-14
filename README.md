@@ -42,3 +42,7 @@ Melody es un Portal web que te permite escuchar musica en cualquier momento y en
 - y una navegacion donde podras ir a diferentes posts de Melody
 con algunas noticias etc...
 - poder buscar por tema de posts.
+
+## News - NEWS
+
+- Pagina con Noticias sobre la Musica
