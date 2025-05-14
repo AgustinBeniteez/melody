@@ -1,0 +1,40 @@
+@import url("/styles/themes.css");
+@import url("/styles/index.css");
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+section {
+    min-width: 500px;
+    display:flex;
+}
+
+#perfil-usuario {
+    width: 1400px;
+}
+
+#foto-perfil {
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 20%;
+}
+
+#perfil-usuario section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0px;
+}
+
+#banner {
+    background-image: none;
+}
+
+#usuarios-sugeridos {
+    max-width: 600px;
+    display:flex;
+}
+
