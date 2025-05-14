@@ -1,41 +1,26 @@
 [
     {
         "title": "Aitana anuncia el lanzamiento de su nuevo álbum ‘CUARTO AZUL’",
-        "description": "Aitana anuncia su cuarto álbum: 'CUARTO AZUL', disponible el 30 de mayo\\n\\n Aitana ha anunciado el lanzamiento de su esperado cuarto álbum de estudio, titulado 'CUARTO AZUL', que llegará tanto en formato digital como físico el próximo 30 de mayo.\\n\\nDefinido como su trabajo más íntimo y global hasta la fecha, 'CUARTO AZUL' ofrece una mirada profunda a la dualidad emocional de la cantante, fusionando momentos de luz y oscuridad para construir distintas facetas de sí misma, tanto a nivel artístico como personal. El álbum recopila experiencias significativas de los últimos años de Aitana, y se presenta como su obra más sincera y espiritual.\\n\\nEl disco estará disponible en varias ediciones: digital, CD, vinilo doble en color azul klein, y una edición especial box set limitada, que incluirá el CD, una tarjeta autografiada y una figura exclusiva de Aitana escuchando música en su icónico \"cuarto azul\".\\n\\nEl primer sencillo oficial del álbum es '6 DE FEBRERO', una canción cargada de emoción que la artista dedica a Sebastián Yatra.",
-        "author": "AgustinBeniteez",
-        "category": "new Album",
         "image": "/src/news/img-news/aitana.jpg",
         "url": "https://www.popelera.net/aitana-album-cuarto-azul/"
     },
     {
         "title": "LINKIN PARK encabezará el Kick Off Show de la Final de la UEFA Champions League",
-        "description": "La legendaria banda de rock LINKIN PARK se subirá al escenario antes del partido de clubes más esperado de la temporada el 31 de mayo en el Munich Football Arena cuando encabecen el Kick Off Show de la Final de la UEFA Champions League patrocinado por Pepsi®.",
-        "author": "AgustinBeniteez",
-        "category": "musica & Futbol",
         "image": "/src/news/img-news/linkinpark-champions.webp",
         "url": "https://es.uefa.com/uefachampionsleague/news/0298-1d88aa38401b-badd9c7611ad-1000--linkin-park-encabezara-el-kick-off-show-de-la-final-de-l/"
     },
     {
         "title": "Linkin Park x League of Legends - “Heavy is the Crown”",
-        "description": "Un día antes del arranque de Worlds 2024 se anunció la canción que acompañará el evento estando a cargo de la banda norteamericana Linkin Park",
-        "author": "AgustinBeniteez",
-        "category": "musica & videojuegos",
         "image": "/src/news/img-news/linkinpark-lol.webp",
         "url": "https://www.leagueoflegends.com/es-es/news/media/heavy-is-the-crown-ft-linkin-park/"
     },
     {
         "title": "Lola Índigo lanza versiones de «Corazón Partido y «Pobre Diabla»",
-        "description": "Lola Índigo lanza versiones de «Corazón Partido y «Pobre Diabla», la artista española Lola Índigo ha viajado hasta Estocolmo para visitar la oficina central de Spotify.",
-        "author": "Isi Rey",
-        "category": "musica",
         "image": "/src/news/img-news/lolaIndigo-cora.webp",
         "url": "https://masterfm.es/lola-indigo-lanza-versiones-de-corazon-partido-y-pobre-diabla/"
     },
     {
         "title": "Arcane | La banda sonora de la segunda temporada contará con Twenty One Pilots & Linkin Park",
-        "description": "Mira la lista de canciones del soundtrack completo aqui...",
-        "author": "André Zuliani",
-        "category": "musica & Series",
         "image": "/src/news/img-news/Arcane-sountrack.webp",
         "url": "https://www.omelete.com.mx/series-tv/arcane-la-banda-sonora-de-la-segunda-temporada-contara-con-twenty-one-pilots-y-stray-kids"
     }
