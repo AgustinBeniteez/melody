@@ -1,8 +1,8 @@
-// Cargar los datos de las noticias
+// --------Cargar los datos de las noticias---------
 let newsData = [];
 let currentNewsIndex = 0;
 
-// Función para cargar los datos del JSON
+// ----------Función para cargar los datos del JSON--------
 async function loadNewsData() {
     try {
         const response = await fetch('/src/news/data-news.json');
@@ -15,7 +15,7 @@ async function loadNewsData() {
     }
 }
 
-// Función para actualizar la noticia principal
+// --------Función para actualizar la noticia principal---------
 function updateMainNews(index) {
     const news = newsData[index];
     const imageNews = document.getElementById('image-news');
@@ -30,11 +30,11 @@ function updateMainNews(index) {
     const newsLink = document.getElementById('news-link');
     newsLink.onclick = function(e) {
         e.preventDefault();
-        window.open(news.url, '_blank');
+        window.open(news.url, '_blank'); // Abre la URL en una nueva pestaña
     };
 }
 
-// Función para generar el grid de noticias
+//--------- Función para generar el Carrusel de Noticias----------
 function generateNewsGrid() {
     const navNews = document.getElementById('nav-news');
     navNews.innerHTML = '';
@@ -62,7 +62,7 @@ function generateNewsGrid() {
     });
 }
 
-// Función para iniciar el carrusel automático
+//----------- Función para iniciar el carrusel automático---------------
 function startNewsCarousel() {
     setInterval(() => {
         currentNewsIndex = (currentNewsIndex + 1) % newsData.length;
@@ -70,5 +70,5 @@ function startNewsCarousel() {
     }, 5000); // Cambiar cada 5 segundos
 }
 
-// Cargar las noticias cuando se carga la página
+//--------- Cargar las noticias cuando se carga la página--------------
 document.addEventListener('DOMContentLoaded', loadNewsData);
