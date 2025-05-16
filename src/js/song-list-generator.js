@@ -2,7 +2,7 @@
 let selectedSong = null;
 //-------- CONSTANTES ALBUMS--------//
 const ALBUMS_LIST = [["From Zero","/src/img/thumbnails/from-zero.webp","Linkin Park"],
-                      ["GUTS","/src/img/thumbnails/GUTS.webp","Olivia Rodrigo"],
+                      ["Debi Tirar Mas Fotos","/src/img/thumbnails/baile_inolvidable_y_dbtf.webp","Bad Bunny"],
                       ["11 razones","/src/img/thumbnails/11Razones.webp","Aitana"],
                       ["6 de febrero","/src/img/thumbnails/6-de-febrero.webp","Aitana"]];
 
