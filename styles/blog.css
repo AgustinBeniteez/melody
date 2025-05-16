@@ -8,12 +8,13 @@ main {
 }
 
 section {
-    min-width: 500px;
+    min-width: 400px;
     display:flex;
+    margin: auto;
 }
 
 #perfil-usuario {
-    width: 1400px;
+    width: 900px;
 }
 
 #foto-perfil {
@@ -26,7 +27,6 @@ section {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 0px;
 }
 
 #banner {
@@ -34,7 +34,7 @@ section {
 }
 
 #usuarios-sugeridos {
-    max-width: 600px;
+    max-width: 500px;
     display:flex;
 }
 
