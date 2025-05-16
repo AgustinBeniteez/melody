@@ -1,0 +1,36 @@
+{
+    "artist": [
+        {
+            "name":"Linkin Park",
+            "profileimage": "/src/blog/media/profile-image-linkin-park.webp",
+            "banner": "/src/blog/media/banner-linkin-park.webp",
+            "description": "",
+            "posts": [
+                {
+                    "content": "Nuevo Album From Zero Deluxe.",
+                    "media": "/src/blog/media/album-from-zero-deluxe.webp"
+                },
+                {
+                    "content": "Próximo concierto en Madrid el dia 24 de Mayo.",
+                    "media": ""
+                } 
+            ]
+        },
+        {
+            "name":"Imagine Dragons",
+            "profileimage": "/src/blog/media/profile-image-imagine-dragons.webp",
+            "banner": "/src/blog/media/banner-imagine-dragons.webp",
+            "description": "LOOM out now. Reflections (from the Vault of Smoke + Mirrors) out now. Imagine Dragons: Live from the Hollywood Bowl in cinemas worldwide March 26 & 29.",
+            "posts": [
+                {
+                    "content": "Nuevo Album LOOM.",
+                    "media": "/src/blog/media/album-loom.webp"
+                },
+                {
+                    "content": "Próximo concierto en Madrid el dia 24 de Mayo.",
+                    "media": ""
+                }
+            ]
+        }
+    ]
+}
