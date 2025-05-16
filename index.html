@@ -11,16 +11,17 @@
 
 </head>
 <body>
-    <img id="logo-main" src="src/img/logo/melody-logo.svg" alt="main">
-    <header>
+    <a href="/index.html">
+    <img id="logo-main" src="/src/img/logo/melody-logo.svg" alt="main" class="quit-mobile"></a>
+    <header id="header-main">
         <nav>
             <div id="home-melody">
                 <a href="/index.html">Home</a>
                 <a href="/pages/main-page.html">Melody</a>
                 <a href="/pages/blog.html">Blog</a>
-                <a id="btn-nav-news" href="/pages/news.html">NEWS <i class="fa-solid fa-newspaper"></i></a>
+                <a href="/pages/news.html">News</a>
             </div>
-            <div class="login-register">
+            <div class="login-register quit-mobile">
                 <a href="">Login</a>
                 <a href="">Register</a>
             </div>
@@ -43,7 +44,7 @@
             </h1>
         </div>
         <div class="main-image-container">
-            <img src="/src/img/main/preview-tema-default.png" width="800"> <!-- Hacer la imagen mas grande en edicion de imagen -->
+            <img src="/src/img/main/preview-tema-default.png" > <!-- Hacer la imagen mas grande en edicion de imagen -->
         </div>
         
 
@@ -69,9 +70,9 @@
         <h2>¡Elige Tú Estilo Preferido!</h2>
 
         <div class="img-container-showcase">
-            <img src="/src/img/main/preview-tema-magenta.png" width="500">
-            <img src="/src/img/main/preview-tema-claro.png" width="500">
-            <img src="/src/img/main/preview-tema-lila.png" width="500">
+            <img src="/src/img/main/preview-tema-magenta.png" class="image-showcase">
+            <img src="/src/img/main/preview-tema-claro.png"  class="image-showcase">
+            <img src="/src/img/main/preview-tema-lila.png"  class="image-showcase">
  
    
         </div>
@@ -79,13 +80,40 @@
         <br>
         <h2>¡Echale un vistazo a Nuestro blog!!</h2>
 
+        <div id="news">
+            <article id="nav-news-1" class="news">
+                <a href="">
+                    <img src="/src/news/img-news/aitana.jpg" alt="news">
+                    <h2>News 1</h2>
+                </a>
+            </article>
+            <article id="nav-news-2" class="news">
+                <a href="">
+                    <img src="/src/news/img-news/linkinpark-lol.webp" alt="news">
+                    <h2>News 2</h2>
+                </a>
+            </article>
+            <article id="nav-news-3" class="news">
+                <a href="">
+                    <img src="/src/news/img-news/lolaIndigo-cora.webp" alt="news">
+                    <h2>News 3</h2>
+                </a>
+            </article>
+            <article id="nav-news-4" class="news">
+                <a href="">
+                    <img src="/src/news/img-news/Arcane-sountrack.webp" alt="news">
+                    <h2>News 4</h2>
+                </a>
+            </article>
+        </div>
+
     </main>
     <footer>
         <nav>
-            <div id="settings">
+            <div id="settings" class="quit-mobile">
 
             </div>
-            <div class="privacy & about">
+            <div class="privacy-and-about">
                 <a href="/pages/contribuidores.html">Contribuidores</a>
                 <a href="/pages/contactar.html">Contactanos</a>
                 <a href="/pages/terms-&-conditions.html">Terminos Y Condiciones</a>

@@ -5,23 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css' rel='stylesheet'/>
     <link rel="shortcut icon" href="/src/img/logo/favicon.ico" type="image/x-icon">
-    <title>Melody | NEWS 🔴</title>
+    <title>Melody | News 🔴</title>
     <link rel="stylesheet" href="/styles/news.css">
     <script src="/src/js/theme-loader.js" defer></script>
 
 </head>
 <body>
-    <img id="logo-main" src="/src/img/logo/melody-logo.svg" alt="main">
-    <header>
+    <a href="/index.html">
+        <img id="logo-main" src="/src/img/logo/melody-logo.svg" alt="main" class="quit-mobile"></a>
+    <header id="header-main">
         <nav>
             <div id="home-melody">
                 <a href="/index.html">Home</a>
                 <a href="/pages/main-page.html">Melody</a>
                 <a href="/pages/blog.html">Blog</a>
-                <a id="btn-nav-news" href="/pages/news.html">NEWS <i class="fa-solid fa-newspaper"></i></a>
+                <a href="/pages/news.html">News</a>
             </div>
+            <div class="login-register quit-mobile">
+                <a href="">Login</a>
+                <a href="">Register</a>
+            </div>
+            
         </nav>
-    </header>
+    </header>   
+
+
     <main id="main-news">
         <aside id="front-news">
             <img id="image-news" src="/src/news/img-news/linkinpark-champions.webp" alt="image-news">
@@ -55,8 +63,21 @@
                     <h2>News 4</h2>
                 </a>
             </article>
-        </di>
+        </section>
     </main>
+    <footer>
+        <nav>
+            <div id="settings" class="quit-mobile">
+
+            </div>
+            <div class="privacy-and-about">
+                <a href="/pages/contribuidores.html">Contribuidores</a>
+                <a href="/pages/contactar.html">Contactanos</a>
+                <a href="/pages/terms-&-conditions.html">Terminos Y Condiciones</a>
+            </div>
+            
+        </nav>
+    </footer>
     <script src="/src/js/news.js"></script>
 </body>
 
