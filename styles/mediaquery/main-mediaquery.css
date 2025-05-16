@@ -87,6 +87,9 @@
     #search input {
         min-width: 275px;
     }
+    .song{
+        overflow: hidden;
+    }
 
 }
 
