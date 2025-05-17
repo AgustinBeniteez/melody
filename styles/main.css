@@ -32,13 +32,14 @@ main {
     height: 97vh;
     width: 98.5vw;
 }
+
 #song-list header nav {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-start;
-
 }
+
 #song-list #header-main-page{
     display: flex;
     background-color: var(--item-list);
@@ -403,7 +404,7 @@ nav a {
 }
 
 
-#account-info button {
+#btn-settings {
     background-color: transparent;
     border: none;
     font-size: 1.5rem;
@@ -419,6 +420,13 @@ nav a {
         cursor: pointer;
     }
 }
+
+
+.btn-nav-settings {
+    display: none;
+}
+
+
 #account-info-text h2 {
     font-size: 1.5rem;
 }

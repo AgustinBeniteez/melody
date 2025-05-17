@@ -7,16 +7,11 @@
 @media screen and (max-width: 919px) {
     main {
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto;
-        grid-template-areas: 
-        "control-panel"
-        "song-info"
-        "song-list"
-        "account-info";
+        grid-template-columns: 0;
+        grid-template-rows: 1fr;
+        grid-template-areas: "song-list";
         gap: 5px;
-        margin: 5px 10px 5px 10px  ;
-
+        margin: 5px 10px 0px 6px;
     }
 
     .item:nth-child(1) {
@@ -57,9 +52,24 @@
         width: 96dvw;
     }
 
+    .btn-nav-settings {
+        display: block;
+        margin-left: 20px;
+    }
+
+    #logo {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 800px) {
+
+    main{
+        margin: 5px 0px 0px 0px;
+        gap: 0px;
+        row-gap: 5px;
+    }
+
     .song-releaseYear{
         display: none;
     }
@@ -90,6 +100,7 @@
     .song{
         overflow: hidden;
     }
+
 
 }
 
