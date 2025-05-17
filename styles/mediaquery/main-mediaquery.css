@@ -65,7 +65,7 @@
 @media screen and (max-width: 800px) {
 
     main{
-        margin: 5px 0px 0px 0px;
+        margin: 5px 0px 0px 6px;
         gap: 0px;
         row-gap: 5px;
     }
