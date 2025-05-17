@@ -21,7 +21,6 @@ body {
     background-color: var(--background-color);
     font-family: var(--fuente-text);
     color: var(--font-color);
-    height: 90dvh;
 }
 
 main {
@@ -30,8 +29,9 @@ main {
     grid-template-rows: 1fr 1fr 1fr 0.5fr;
     gap: 10px;
     margin: 10px;
-    height: 97vh;
     width: 98.5vw;
+    height: 98dvh;
+
 }
 
 #song-list header nav {
