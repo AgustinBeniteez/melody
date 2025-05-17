@@ -206,14 +206,6 @@ function cargarCanciones(song, songElement) {
   });
 }
 
-//---------- LISTENER DEL MODAL SETTINGS --------------
-const btnSettings = document.getElementById("btn-settings");
-btnSettings.addEventListener("click", function() {
-    ocultarModal();
-});
-
-
-
 // Variables globales para el reproductor
 let currentPlayer = null;
 let allSongs = [];
