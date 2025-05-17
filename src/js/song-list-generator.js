@@ -120,7 +120,7 @@ function cargarAlbum(albumNumber) {
     <button id="btn-back"> <i class="fa-solid fa-circle-xmark"></i> </button>
     </header>
     <nav id="nav-songs">
-        | <span>Titulo <i class="fa-solid fa-music"></i></span> | <span id="separador-nav"></span>  <span id="span-duration">| duration <i class="fa-solid fa-clock"></i> | </span>  <span id="span-year">| release year <i class="fa-solid fa-calendar-days"></i> |</span>
+        | <span>Songs <i class="fa-solid fa-music"></i></span> | <span id="separador-nav"></span>  <span id="span-duration">| duration <i class="fa-solid fa-clock"></i> | </span>  <span id="span-year">| release year <i class="fa-solid fa-calendar-days"></i> |</span>
     </nav>
   `;
 
@@ -193,56 +193,22 @@ function cargarCanciones(song, songElement) {
     </div>
   `;
 
-  // Agregar el event listener para el clic
+  // Agregar el event listener para el clic a las canciones
   songElement.addEventListener("click", function() {
     selectedSong = song;
     if (typeof changeSongInfo === 'function') {
       changeSongInfo(selectedSong);
       // Inicializar el reproductor con la URL de la canción seleccionada
-      iniciarReproductor(selectedSong.audioUrl);
+      iniciarReproductor(
+        selectedSong.audioUrl,
+        selectedSong.title,
+        selectedSong.artist,
+        selectedSong.album || '',
+        selectedSong.albumImageUrl
+      );
     } else {
       console.error('La función changeSongInfo no está definida');
     }
   });
 }
 
-// Variables globales para el reproductor
-let currentPlayer = null;
-let allSongs = [];
-let currentSongIndex = -1;
-
-function iniciarReproductor(selectedSongUrl) {
-  // Si aún no tenemos la lista completa de canciones, la obtenemos
-  if (allSongs.length === 0) {
-    fetch("/src/data/data.json")
-      .then((response) => response.json())
-      .then((data) => {
-        allSongs = data.songs.map(song => song.audioUrl);
-        // Encontrar el índice de la canción seleccionada
-        currentSongIndex = allSongs.indexOf(selectedSongUrl);
-        // Iniciar el reproductor con todas las canciones
-        if (currentPlayer) {
-          currentPlayer.stop();
-        }
-        currentPlayer = new Reproductor(allSongs);
-        // Reproducir desde la canción seleccionada
-        if (currentSongIndex !== -1) {
-          currentPlayer.playFrom(currentSongIndex);
-        } else {
-          currentPlayer.play();
-        }
-      });
-  } else {
-    // Ya tenemos la lista de canciones, solo actualizamos el índice y reproducimos
-    currentSongIndex = allSongs.indexOf(selectedSongUrl);
-    if (currentPlayer) {
-      currentPlayer.stop();
-    }
-    currentPlayer = new Reproductor(allSongs);
-    if (currentSongIndex !== -1) {
-      currentPlayer.playFrom(currentSongIndex);
-    } else {
-      currentPlayer.play();
-    }
-  }
-}

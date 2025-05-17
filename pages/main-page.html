@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/styles/settings.css">
     <link rel="stylesheet" href="/styles/mediaquery/main-mediaquery.css">
     <link rel="stylesheet" href="/styles/login.css">
+    <link rel="stylesheet" href="/styles/volume-control.css">
 
 </head>
 <body>  <!-- Se pone class="tema-magenta" o class="tema-claro" o el tema que sea para cambiar el tema | FUNCIONALIDAD con JS de Settings-->
@@ -57,7 +58,7 @@
                 </article>
                 <article id="list-container">
                     <nav id="nav-songs">
-                        | <span>Titulo <i class="fa-solid fa-music"></i> </span> | <span id="separador-nav"></span> <span id="span-duration">| duration <i class="fa-solid fa-clock"></i> | </span>  <span id="span-year">| release year <i class="fa-solid fa-calendar-days"></i> |</span>
+                        | <span>Songs <i class="fa-solid fa-music"></i> </span> | <span id="separador-nav"></span> <span id="span-duration">| duration <i class="fa-solid fa-clock"></i> | </span>  <span id="span-year">| release year <i class="fa-solid fa-calendar-days"></i> |</span>
                     </nav>
                     <div id="song-list-content">
                         <!-- Aqui van las canciones -->
@@ -99,25 +100,18 @@
         <!-- Panel de control de la cancion -->
         <section id="control-panel" class="item">
             <div id="controls">
-                <!-- Favoritos-->
-                <button id="btn-fav">
-                    <i class="fa-solid fa-heart"></i>
-                </button>
-                <!-- antes-->
-                <button id="btn-before">
-                    <i class="fa-solid fa-backward-step"></i>
+                <!-- like-->
+                 <button id="btn-fav">
+                   <i class="fa-solid fa-heart"></i>
                 </button>
                 <!-- play or stop-->
                 <button id="btn-play">
                     <i id="play-pause" class="fa-solid fa-play"></i>
                 </button>
-                <!-- suguiente-->
-                <button id="btn-after">
-                    <i class="fa-solid fa-step-forward"></i>
-                </button>
-                <!-- bucle-->
-                <button id="btn-shuffle">
-                    <i class="fa-solid fa-shuffle"></i>
+                <!-- volumen-->
+                <button id="btn-volume">
+                    <i id="volume" class="fa-solid fa-volume-high"></i>
+                    <input type="range" id="volume-control-input" min="0" max="100" value="100">
                 </button>
             </div>
             <div id="progress-bar">
@@ -156,12 +150,12 @@
         </section>
     </section>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="/src/js/reproductor.js"></script>
     <script src="/src/js/settings.js"></script>
+    <script src="/src/js/reproductor.js"></script>
+    <script src="/src/js/player-instance.js"></script>
     <script src="/src/js/song-list-generator.js"></script>
     <script src="/src/js/login.js"></script>
-
+    <script src="src/js/volume-control.js"></script>
 </body>
 </html>
 

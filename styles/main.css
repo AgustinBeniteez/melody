@@ -30,8 +30,7 @@ main {
     gap: 10px;
     margin: 10px;
     width: 98.5vw;
-    height: 98dvh;
-
+    height: 97dvh;
 }
 
 #song-list header nav {
@@ -388,10 +387,13 @@ nav a {
    font-size: 1.5rem;
    color: var(--font-secondary-color);
    transition: all 0.5s;
-   
+   display: flex;
+   align-items: center;
+   gap: 10px;
+
    &:hover{
       color: var(--button-color);
-      transform: scale(1.15);
+      transform: scale(1);
       transition: all 0.5s;
       cursor: pointer;
    }
@@ -518,3 +520,86 @@ nav a {
     }
 }
 
+#account-login button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.3rem;
+    color: var(--font-secondary-color);
+    transition: all 0.5s;
+    
+    &:hover{
+        color: var(--button-color);
+        transform: scale(1.15);
+       /* Rotacion de la rueda de ajustes */
+        transform: rotate(90deg);
+        transition: all 0.5s;
+        cursor: pointer;
+    }
+}
+
+#volume-control-input {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: var(--buscador);
+    border-radius: 15px;
+    cursor: pointer;
+    
+}
+
+#volume-control-input::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    background-color: var(--buscador);
+    border-radius: 5px;
+    height: 8px;
+    cursor: grab;
+}
+
+#volume-control-input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    background: var(--font-color);
+    border-radius: 50%;
+    margin-top: -4px;
+    cursor: grab;
+}
+
+#volume-control-input::-moz-range-track {
+    background-color: var(--buscador);
+    border-radius: 5px;
+    height: 8px;
+    cursor: grab;
+}
+
+#volume-control-input::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    background: var(--font-color);
+    border-radius: 50%;
+    border: none;
+    cursor: grab;
+}
+
+#volume-control {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--button-color);
+    color: var(--font-color);
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 60px;
+    transition: all 0.5s;
+
+    &:hover {
+        background-color: var(--font-secondary-color);
+        color: var(--button-color);
+        transform: scale(1);
+        transition: all 0.5s;
+        cursor: pointer;
+    }
+}

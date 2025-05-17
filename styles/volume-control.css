@@ -1,0 +1,19 @@
+/* Estilos para el control de volumen */
+#btn-volume {
+    position: relative;
+}
+
+#volume-control-input {
+    opacity: 0;
+    width: 100px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+    position: absolute;
+    left: 20px;
+}
+
+#btn-volume:hover #volume-control-input {
+    opacity: 1;
+    transform: translateX(10px);
+    pointer-events: auto;
+}
