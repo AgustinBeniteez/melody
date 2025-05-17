@@ -21,6 +21,7 @@ body {
     background-color: var(--background-color);
     font-family: var(--fuente-text);
     color: var(--font-color);
+    height: 90dvh;
 }
 
 main {
