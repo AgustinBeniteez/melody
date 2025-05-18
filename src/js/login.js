@@ -82,6 +82,17 @@ function handleRegisterSubmit(e) {
     const password = document.getElementById('register-password').value;
     const userIconInput = document.getElementById('register-usericon');
     
+    // Validar campos antes de procesar el registro
+    const validation = formValidation.validateRegisterForm(username, password);
+    
+    // Mostrar errores si los hay
+    formValidation.showError(document.getElementById('register-username'), validation.errors.username);
+    formValidation.showError(document.getElementById('register-password'), validation.errors.password);
+    
+    if (!validation.isValid) {
+        return; // Detener el proceso si hay errores de validación
+    }
+    
     const processRegistration = (userIcon) => {
         const account = {
             username: username,
@@ -111,6 +122,10 @@ function handleLoginSubmit(e) {
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
     
+    // Limpiar mensajes de error anteriores
+    formValidation.showError(document.getElementById('username'), '');
+    formValidation.showError(document.getElementById('password'), '');
+    
     // Verificar si las credenciales coinciden con alguna cuenta
     const accountFound = accounts.find(account =>
         account.username === username && account.password === password
@@ -122,10 +137,9 @@ function handleLoginSubmit(e) {
         changeAccountInfoText(accountFound);
         hiddenBtns();
         showAccountInfoText();
-        // Aquí puedes agregar más lógica después del login exitoso
     } else {
         console.log('Credenciales incorrectas');
-        // Aquí puedes agregar lógica para mostrar un mensaje de error
+        formValidation.showError(document.getElementById('password'), 'Usuario o contraseña incorrectos');
     }
 }
 

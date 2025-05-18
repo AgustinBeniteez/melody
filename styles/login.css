@@ -80,10 +80,11 @@
 
 #login-form, #register-form {
   margin-top: 2%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 345px;
 }
 
 #login-form input, #register-form input {
