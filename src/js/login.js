@@ -26,9 +26,9 @@ function addLoginHTMLModal() {
         <h2>Login</h2>
         <form id="login-form">
             <label for="username"><i class="fa-solid fa-user"></i> Username:</label>
-            <input type="text" id="username" name="username" required>
+            <input type="text" placeholder="user..." id="username" name="username" required>
             <label for="password"><i class="fa-solid fa-key"></i> Password:</label>
-            <input type="password" id="password" name="password" required>
+            <input type="password" placeholder="password..." id="password" name="password" required>
             <button class="btn-submit" type="submit"><i class="fa-solid fa-unlock"></i> Login</button>
         </form>
     </div>
@@ -48,9 +48,9 @@ function addRegisterHTMLModal() {
         <h2>Register</h2>
         <form id="register-form">
             <label for="username"><i class="fa-solid fa-user"></i> Username:</label>
-            <input type="text" id="register-username" name="register-username" required>
+            <input type="text" placeholder="user..." id="register-username" name="register-username" required>
             <label for="password"><i class="fa-solid fa-key"></i> Password:</label>
-            <input type="password" id="register-password" name="register-password" required>
+            <input type="password" placeholder="password..." id="register-password" name="register-password" required>
             <label for="usericon"><i class="fa-solid fa-image"></i> Imagen de perfil:</label>
             <input type="file" id="register-usericon" name="register-usericon" accept="image/*">
             <button class="btn-submit" type="submit"><i class="fa-solid fa-floppy-disk"></i> Register</button>

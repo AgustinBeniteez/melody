@@ -22,6 +22,36 @@ class Reproductor {
     const controlButton = document.querySelector('#btn-play');
     // Configurar el volumen inicial
     this.audio.volume = this.volume;
+
+    // Configurar el evento timeupdate para actualizar el tiempo y la barra de progreso
+    this.audio.addEventListener('timeupdate', () => {
+      const currentTime = this.audio.currentTime;
+      const duration = this.audio.duration;
+
+      // Actualizar el tiempo actual
+      const currentTimeElement = document.querySelector('#current-time');
+      if (currentTimeElement) {
+        const minutes = Math.floor(currentTime / 60);
+        const seconds = Math.floor(currentTime % 60);
+        currentTimeElement.textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
+      }
+
+      // Actualizar la barra de progreso
+      const progressBar = document.querySelector('#progress-bar-input');
+      if (progressBar && !isNaN(duration)) {
+        progressBar.value = (currentTime / duration) * 100;
+      }
+    });
+
+    // Agregar evento para buscar en la canción usando la barra de progreso
+    const progressBar = document.querySelector('#progress-bar-input');
+    if (progressBar) {
+      progressBar.addEventListener('input', (e) => {
+        const time = (e.target.value / 100) * this.audio.duration;
+        this.audio.currentTime = time;
+      });
+    }
+
     if (controlButton) {
       controlButton.addEventListener('click', () => {
         if (this.isPlaying) {

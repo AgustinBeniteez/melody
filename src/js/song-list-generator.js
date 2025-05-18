@@ -221,7 +221,7 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
-// Función para filtrar canciones
+// ---------Función para filtrar canciones-----------
 function filtrarCanciones(searchTerm) {
   const songElements = document.querySelectorAll(".song");
   
@@ -230,8 +230,8 @@ function filtrarCanciones(searchTerm) {
     const artist = songElement.querySelector(".song-details p:first-of-type").textContent.toLowerCase();
     const album = songElement.querySelector(".song-details p:last-of-type").textContent.toLowerCase();
     
-    if (title.includes(searchTerm) || 
-        artist.includes(searchTerm) || 
+    if (title.includes(searchTerm) ||
+        artist.includes(searchTerm) ||
         album.includes(searchTerm)) {
       songElement.style.display = "flex";
     } else {
