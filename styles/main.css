@@ -466,6 +466,7 @@ nav a {
         background-color: var(--button-color);
         transform: scale(1.01);
         transition: ease-in 0.2s;
+        cursor: pointer;
     }
 }
 .album img {

@@ -212,3 +212,75 @@ function cargarCanciones(song, songElement) {
   });
 }
 
+// Agregar evento de búsqueda al input
+document.addEventListener("DOMContentLoaded", function() {
+  const searchInput = document.querySelector("#search input");
+  searchInput.addEventListener("input", function(e) {
+    const searchTerm = e.target.value.toLowerCase();
+    filtrarCanciones(searchTerm);
+  });
+});
+
+// Función para filtrar canciones
+function filtrarCanciones(searchTerm) {
+  const songElements = document.querySelectorAll(".song");
+  
+  songElements.forEach(songElement => {
+    const title = songElement.querySelector("h2").textContent.toLowerCase();
+    const artist = songElement.querySelector(".song-details p:first-of-type").textContent.toLowerCase();
+    const album = songElement.querySelector(".song-details p:last-of-type").textContent.toLowerCase();
+    
+    if (title.includes(searchTerm) || 
+        artist.includes(searchTerm) || 
+        album.includes(searchTerm)) {
+      songElement.style.display = "flex";
+    } else {
+      songElement.style.display = "none";
+    }
+  });
+}
+
+//--------- LISTENER PARA BOTON DE VOLVER AL INICIO --------//
+// El listener se agrega dinámicamente en la función cargarAlbum
+
+//--------- FUNCION CARGAR CANCIONES --------//
+function cargarCanciones(song, songElement) {
+  songElement.className = "song";
+  songElement.id = `song-${song.title}`;
+  songElement.innerHTML = `
+    <img src="${ song.albumImageUrl ? song.albumImageUrl : "/src/img/thumbnails/thumbnails_default.webp" }" alt="${song.title}">
+    <div class="song-details">
+      <h2>${song.title}</h2>
+      <p><i class="fa-solid fa-microphone-lines" style="padding-left:2px;"></i>
+      ${song.artist}</p>
+      <p><i class="fa-solid fa-compact-disc"></i> ${song.album}</p>
+    </div>
+    <div class="song-duration">
+      <p><i class="fa-solid fa-clock"></i>
+      ${song.duration ? song.duration : "0:00"}</p>
+    </div>
+    <div class="song-releaseYear">
+      <p> <i class="fa-solid fa-calendar-days"></i>
+      ${song.releaseYear ? song.releaseYear : "????"}</p>
+    </div>
+  `;
+
+  // Agregar el event listener para el clic a las canciones
+  songElement.addEventListener("click", function() {
+    selectedSong = song;
+    if (typeof changeSongInfo === 'function') {
+      changeSongInfo(selectedSong);
+      // Inicializar el reproductor con la URL de la canción seleccionada
+      iniciarReproductor(
+        selectedSong.audioUrl,
+        selectedSong.title,
+        selectedSong.artist,
+        selectedSong.album || '',
+        selectedSong.albumImageUrl
+      );
+    } else {
+      console.error('La función changeSongInfo no está definida');
+    }
+  });
+}
+
