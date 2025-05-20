@@ -1,10 +1,10 @@
-class Reproductor {
+class Player {
   constructor(songList) {
     this.songList = songList;
     this.currentIndex = 0;
     this.audio = new Audio();
     this.isPlaying = false;
-    this.volume = 1.0; // Volumen predeterminado
+    this.volume = 1.0; // Default volume
     this.setupAudioEvents();
     this.setupMediaSession();
     this.setupVolumeControl();
@@ -101,7 +101,7 @@ class Reproductor {
     }
   }
 
-  iniciarReproductor(audioUrl, metadata = {}) {
+  startPlayer(audioUrl, metadata = {}) {
     // Detener la reproducción actual si existe
     if (this.isPlaying) {
       this.pause();

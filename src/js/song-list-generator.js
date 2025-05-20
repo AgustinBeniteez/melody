@@ -199,7 +199,7 @@ function loadSongs(song, songElement) {
     if (typeof changeSongInfo === 'function') {
       changeSongInfo(selectedSong);
       // Inicializar el reproductor con la URL de la canción seleccionada
-      iniciarReproductor(
+      startPlayer(
         selectedSong.audioUrl,
         selectedSong.title,
         selectedSong.artist,

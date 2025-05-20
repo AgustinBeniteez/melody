@@ -1,13 +1,13 @@
 // Crear una instancia global del reproductor
-const reproductor = new Reproductor([]);
+const player = new Player([]);
 
 // Función global para iniciar el reproductor
-function iniciarReproductor(audioUrl, titulo = '', artista = '', album = '', imagenUrl = '') {
+function startPlayer(audioUrl, title = '', artist = '', album = '', imageUrl = '') {
     const metadata = {
-        title: titulo,
-        artist: artista,
+        title: title,
+        artist: artist,
         album: album,
-        artwork: imagenUrl
+        artwork: imageUrl
     };
-    reproductor.iniciarReproductor(audioUrl, metadata);
+    player.startPlayer(audioUrl, metadata);
 }
