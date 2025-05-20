@@ -122,7 +122,7 @@ function handleLoginSubmit(e) {
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
     
-    // Limpiar mensajes de error anteriores
+    // clear mensajes de error anteriores
     formValidation.showError(document.getElementById('username'), '');
     formValidation.showError(document.getElementById('password'), '');
     

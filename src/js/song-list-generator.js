@@ -58,14 +58,14 @@ fetch("/src/data/data.json")
 
     songs.forEach((song) => {
       const songElement = document.createElement("div");
-      cargarCanciones(song, songElement);
+      loadSongs(song, songElement);
       // agrega el elemento a la lista de canciones
       songList.appendChild(songElement);
     });
   });
 
 //--------- FUNCIONES PARA OCULTAR PAGINA DE INICIO CANCIONES --------//
-function limpiarSonglist() {
+function clearSonglist() {
   const songList = document.getElementById("search-main-page");
   if (songList.classList.contains("hidden")) {
     // aplica el style hidden
@@ -76,7 +76,7 @@ function limpiarSonglist() {
   }
 }
 
-function limpiarAlbum() {
+function clearAlbum() {
   const albumSongList = document.getElementById("album-song-menu");
   if (albumSongList) {
     // Eliminar el contenido del álbum
@@ -96,7 +96,7 @@ function ocultarModal(){
 
 
 //--------- FUNCIONES PARA CARGAR ALBUM --------//
-function cargarAlbum(albumNumber) {
+function loadAlbum(albumNumber) {
   const songList = document.getElementById("song-list");
   let albumSongList = document.getElementById("album-song-menu");
   
@@ -134,7 +134,7 @@ function cargarAlbum(albumNumber) {
           const articleListAlbum = document.createElement("article");
           //---- añado id al elemento----
           articleListAlbum.id = "list-container-album";
-          cargarCanciones(song, articleListAlbum);
+          loadSongs(song, articleListAlbum);
           albumSongList.appendChild(articleListAlbum);
         }
       });
@@ -145,34 +145,34 @@ function cargarAlbum(albumNumber) {
   //--------- LISTENER PARA BOTON DE VOLVER AL INICIO --------//
   const btnBack = albumSongList.querySelector('#btn-back');
   btnBack.addEventListener('click', () => {
-    limpiarAlbum();
-    limpiarSonglist();
+    clearAlbum();
+    clearSonglist();
   });
 }
 
 //--------- FUNCION DE ABIR EL ALBUM --------//
 //--- listener al hacer click en el album
 album1.addEventListener("click", () => {
-    limpiarSonglist();
-    cargarAlbum(0);
+    clearSonglist();
+    loadAlbum(0);
 });
 album2.addEventListener("click", () => {
-  limpiarSonglist();
-  cargarAlbum(1);
+  clearSonglist();
+  loadAlbum(1);
 })
 album3.addEventListener("click", () => {
-  limpiarSonglist();
-  cargarAlbum(2);
+  clearSonglist();
+  loadAlbum(2);
 })
 album4.addEventListener("click", () => {
-  limpiarSonglist();
-  cargarAlbum(3);
+  clearSonglist();
+  loadAlbum(3);
 })
 //--------- LISTENER PARA BOTON DE VOLVER AL INICIO --------//
 // El listener se agrega dinámicamente en la función cargarAlbum
 
 //--------- FUNCION CARGAR CANCIONES --------//
-function cargarCanciones(song, songElement) {
+function loadSongs(song, songElement) {
   songElement.className = "song";
   songElement.id = `song-${song.title}`;
   songElement.innerHTML = `
@@ -239,48 +239,3 @@ function filtrarCanciones(searchTerm) {
     }
   });
 }
-
-//--------- LISTENER PARA BOTON DE VOLVER AL INICIO --------//
-// El listener se agrega dinámicamente en la función cargarAlbum
-
-//--------- FUNCION CARGAR CANCIONES --------//
-function cargarCanciones(song, songElement) {
-  songElement.className = "song";
-  songElement.id = `song-${song.title}`;
-  songElement.innerHTML = `
-    <img src="${ song.albumImageUrl ? song.albumImageUrl : "/src/img/thumbnails/thumbnails_default.webp" }" alt="${song.title}">
-    <div class="song-details">
-      <h2>${song.title}</h2>
-      <p><i class="fa-solid fa-microphone-lines" style="padding-left:2px;"></i>
-      ${song.artist}</p>
-      <p><i class="fa-solid fa-compact-disc"></i> ${song.album}</p>
-    </div>
-    <div class="song-duration">
-      <p><i class="fa-solid fa-clock"></i>
-      ${song.duration ? song.duration : "0:00"}</p>
-    </div>
-    <div class="song-releaseYear">
-      <p> <i class="fa-solid fa-calendar-days"></i>
-      ${song.releaseYear ? song.releaseYear : "????"}</p>
-    </div>
-  `;
-
-  // Agregar el event listener para el clic a las canciones
-  songElement.addEventListener("click", function() {
-    selectedSong = song;
-    if (typeof changeSongInfo === 'function') {
-      changeSongInfo(selectedSong);
-      // Inicializar el reproductor con la URL de la canción seleccionada
-      iniciarReproductor(
-        selectedSong.audioUrl,
-        selectedSong.title,
-        selectedSong.artist,
-        selectedSong.album || '',
-        selectedSong.albumImageUrl
-      );
-    } else {
-      console.error('La función changeSongInfo no está definida');
-    }
-  });
-}
-
