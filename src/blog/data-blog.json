@@ -8,11 +8,11 @@
             "posts": [
                 {
                     "content": "Nuevo Album From Zero Deluxe.",
-                    "media": "/src/blog/media/album-from-zero-deluxe.webp"
+                    "media": "/src/blog/media/linkinparkgrupal.webp"
                 },
                 {
-                    "content": "Próximo concierto en Madrid el dia 24 de Mayo.",
-                    "media": ""
+                    "content": "Official merchandise está disponible en la carpa principal.",
+                    "media": "/src/blog/media/linkinpark-a.webp"
                 } 
             ]
         },
@@ -29,6 +29,22 @@
                 {
                     "content": "Próximo concierto en Madrid el dia 24 de Mayo.",
                     "media": ""
+                }
+            ]
+        },
+        {
+            "name":"Lola Índigo",
+            "profileimage": "/src/blog/media/lolaprofile.webp",
+            "banner": "/src/blog/media/lolaprofile.webp",
+            "description": "Artista española multiplatino. Cantante, bailarina y coreógrafa. Nuevas versiones de 'Corazón Partido' y 'Pobre Diabla' ya disponibles.",
+            "posts": [
+                {
+                    "content": "Quedan solo 925 entradas 🎟️ de visibilidad reducida para el concierto de Lola Indigo en el Estadio Metropolitano de Madrid!!",
+                    "media": "/src/blog/media/lolaindigo2.webp"
+                },
+                {
+                    "content": "TOP en SPAIN con el nuevo album ",
+                    "media": "/src/blog/media/lolaindigo1.webp"
                 }
             ]
         }

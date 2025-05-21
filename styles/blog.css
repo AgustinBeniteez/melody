@@ -4,44 +4,129 @@
 main {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 4.2rem;
 }
 
-section {
-    min-width: 400px;
-    display:flex;
-    margin: auto;
-}
-
-#perfil-usuario {
-    width: 900px;
+#timeline {
+    flex: 1;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 800px;
 }
 
-#foto-perfil {
+.post {
+    background-color: var(--background-color);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--hover-color);
+}
+
+.post-header .profile-pic {
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    width: 20%;
+    object-fit: cover;
 }
 
-#perfil-usuario section {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.post-header .user-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--font-color);
 }
 
-#banner {
-    background-image: none;
+.post-content p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    color: var(--font-color);
+}
+
+.post-content .post-media {
+    width: 100%;
+    border-radius: 0.5rem;
+    margin-top: 0.5rem;
 }
 
 #usuarios-sugeridos {
-    max-width: 500px;
-    display:flex;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+    background-color: var(--background-color);
+    border-radius: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+    position: sticky;
+    top: 2rem;
+}
+
+#usuarios-sugeridos button {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: var(--background-color);
+    cursor: pointer;
+    transition: background-color 0.2s;
+    width: 100%;
+    text-align: left;
+}
+
+#usuarios-sugeridos button.active {
+    background-color: var(--hover-color);
+}
+
+#usuarios-sugeridos button:hover {
+    background-color: var(--hover-color);
+}
+
+#usuarios-sugeridos button img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#usuarios-sugeridos button p {
+    font-size: 1rem;
+    color: var(--font-color);
 }
 
 p, h1, h2, h3, ul {
     color: var(--font-color);
-    padding-bottom: 0;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+
+    main {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #usuarios-sugeridos {
+        width: 100%;
+        position: static;
+    }
+
+    main, section {
+        width: 100%;
+    }
 }
