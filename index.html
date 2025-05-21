@@ -8,7 +8,8 @@
     <title>Melody | Home</title>
     <script src="/src/js/theme-loader.js" defer></script>
     <link rel="stylesheet" href="/styles/index.css">
-
+    <link rel="preload" href="/src/img/main/preview-tema-azul.png" as="image" fetchpriority="high">
+    <link rel="preload" href="/src/img/main/preview-tema-default.png" as="image" fetchpriority="high">
 </head>
 <body>
     <a href="/index.html">
@@ -22,8 +23,8 @@
                 <a href="/pages/news.html">News</a>
             </div>
             <div class="login-register quit-mobile">
-                <a href="">Login</a>
-                <a href="">Register</a>
+                <a href="/pages/main-page.html#login">Login</a>
+                <a href="/pages/main-page.html#register">Register</a>
             </div>
             
         </nav>
@@ -44,7 +45,7 @@
             </h1>
         </div>
         <div class="main-image-container">
-            <img src="/src/img/main/preview-tema-default.png" > <!-- Hacer la imagen mas grande en edicion de imagen -->
+            <img src="/src/img/main/preview-tema-default.png" loading="lazy" > <!-- Hacer la imagen mas grande en edicion de imagen -->
         </div>
         
 
@@ -66,47 +67,47 @@
             <p>Si, Melody ofrece noticias de lo que esta pasando en la musica, si quieres saber mas sobre Linkin Park, Imagine Dragons etc... ve a News</p>
         </details>
 
-        <br>
-        <h2>¡Elige Tú Estilo Preferido!</h2>
 
+        <h1 class="subtitle">ELIGE TU ESTILO <i class="fa-solid fa-paintbrush"></i></h1>
+
+
+        <div class="main-image-container">
+            <img src="/src/img/main/701shots_so.png" >
+        </div>
         <div class="img-container-showcase">
-            <img src="/src/img/main/preview-tema-magenta.png" class="image-showcase">
-            <img src="/src/img/main/preview-tema-claro.png"  class="image-showcase">
+            <img src="/src/img/main/preview-tema-cian.png" class="image-showcase">
+            <img src="/src/img/main/preview-tema-marron.png"  class="image-showcase">
             <img src="/src/img/main/preview-tema-lila.png"  class="image-showcase">
  
    
         </div>
 
-        <br>
-        <h2>¡Echale un vistazo a Nuestro blog!!</h2>
+        <h3>Melody Posee Mas de 7 Temas de colores comparible con su UI, pudiendo el usuario elegirlo a su gusto</h3>
 
-        <div id="news">
+        <h1 class="subtitle">MANTENTE INFORMADO &nbsp;<i class="fa-solid fa-rss"></i></h1>
+
+        <div id="news-showcase">
             <article id="nav-news-1" class="news">
                 <a href="">
                     <img src="/src/news/img-news/aitana.jpg" alt="news">
-                    <h2>News 1</h2>
+                    <h2>Aitana anuncia su nuevo álbum</h2>
                 </a>
             </article>
             <article id="nav-news-2" class="news">
                 <a href="">
                     <img src="/src/news/img-news/linkinpark-lol.webp" alt="news">
-                    <h2>News 2</h2>
+                    <h2>Linkin Park x League of Legends</h2>
                 </a>
             </article>
             <article id="nav-news-3" class="news">
                 <a href="">
                     <img src="/src/news/img-news/lolaIndigo-cora.webp" alt="news">
-                    <h2>News 3</h2>
+                    <h2>Lola Índigo lanza versiones de sus canciones</h2>
                 </a>
             </article>
-            <article id="nav-news-4" class="news">
-                <a href="">
-                    <img src="/src/news/img-news/Arcane-sountrack.webp" alt="news">
-                    <h2>News 4</h2>
-                </a>
-            </article>
-        </div>
 
+        </div>
+<h3>Melody Ofrece Un Portal de Noticias Para Informate de Todo lo Nuevo Sobre Tus Artistas Favoritos</h3>
     </main>
     <footer>
         <nav>

@@ -1,3 +1,4 @@
+
 //--------- INFO ACCOUNT --------//
 // account por defecto ADMIN
 const ACCOUNT_ADMIN = {  //NO es nada seguro pero poder probar cosas
@@ -37,6 +38,14 @@ function addLoginHTMLModal() {
     document.getElementById('login-form').addEventListener('submit', handleLoginSubmit);
     
 }
+
+window.addEventListener('DOMContentLoaded', () => {
+    checkURLHash();
+});
+window.addEventListener('hashchange', () => {
+    checkURLHash();
+});
+
 
 function addRegisterHTMLModal() {
     //modal content
@@ -172,5 +181,15 @@ function showAccountInfoText() {
         accountInfoText.classList.remove('hidden');
     }else{
         accountInfoText.classList.add('hidden');
+    }
+}
+
+function checkURLHash() {
+    if (location.hash === '#login') {
+        openLoginModal('login');
+        history.replaceState(null, null, ' '); //Funcion para vaciar el # de una URL
+    } else if (location.hash === '#register') {
+        openLoginModal('register');
+        history.replaceState(null, null, ' ');
     }
 }

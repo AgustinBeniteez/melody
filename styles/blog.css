@@ -20,7 +20,7 @@ main {
 }
 
 .post {
-    background-color: var(--background-color);
+    background-color: var(--section-color);
     border-radius: 1rem;
     padding: 1.5rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -83,7 +83,7 @@ main {
     padding: 0.75rem;
     border: none;
     border-radius: 0.5rem;
-    background-color: var(--background-color);
+    background-color: var(--section-color);
     cursor: pointer;
     transition: background-color 0.2s;
     width: 100%;
@@ -95,7 +95,7 @@ main {
 }
 
 #usuarios-sugeridos button:hover {
-    background-color: var(--hover-color);
+    background-color: var(--item-list);
 }
 
 #usuarios-sugeridos button img {
