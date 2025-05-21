@@ -15,6 +15,9 @@ section {
 
 #perfil-usuario {
     width: 900px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 #foto-perfil {
@@ -38,3 +41,7 @@ section {
     display:flex;
 }
 
+p, h1, h2, h3, ul {
+    color: var(--font-color);
+    padding-bottom: 0;
+}
