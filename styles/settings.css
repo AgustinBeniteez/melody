@@ -75,9 +75,9 @@
     right: 10px;
     border-radius: 50%;
     margin: 10px;
-    background-color: var(--salir-cancelar);
     border: none;
     font-size: 2.2rem;
+    background-color: transparent;
     color: var(--font-color);
     flex-direction: row;
     justify-content: center;
@@ -85,7 +85,6 @@
     transition: ease-in-out 0.3s;
 
     &:hover{
-        background-color: var(--salir-cancelar-hover);
         transform: rotate(180deg);
         transition: ease-in-out 0.3s;
         cursor: pointer;
