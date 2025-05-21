@@ -100,7 +100,9 @@
     .song{
         overflow: hidden;
     }
-
+    #settings-section {
+        overflow-x: hidden;
+    }
 
 }
 

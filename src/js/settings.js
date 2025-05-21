@@ -2,11 +2,9 @@
 const NUMERO_DE_THEMES = 10;
 const THEMES = ["tema-default", "tema-claro", "tema-magenta", "tema-rosa", "tema-cian", "tema-azul", "tema-marron", "tema-lila", "tema-pastel", "tema-verde"];
 const THEMES_VARIABLES = "--section-color";
+
 // guarda el div de temas
 const themesSettings = document.getElementById('config-themes');
-
-//--------- variables de idioma --------//
-const LANGUAGES = ["en", "es"]; //Por hacer (solo esta puesto el HTML no el Js)
 
 //----------- CARGA TEMAS ------------//
 // Función para obtener el tema guardado
