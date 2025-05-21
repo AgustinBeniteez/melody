@@ -1,10 +1,25 @@
-// Variable global para almacenar la canción seleccionada
+// Variables globales
 let selectedSong = null;
+let likedSongs = new Set(); // Almacena las canciones favoritas
+
+// Cargar canciones favoritas desde localStorage
+function loadLikedSongsFromStorage() {
+  const storedSongs = localStorage.getItem('likedSongs');
+  if (storedSongs) {
+    likedSongs = new Set(JSON.parse(storedSongs));
+  }
+}
+
+// Guardar canciones favoritas en localStorage
+function saveLikedSongsToStorage() {
+  localStorage.setItem('likedSongs', JSON.stringify(Array.from(likedSongs)));
+}
+
 //-------- CONSTANTES ALBUMS--------//
-const ALBUMS_LIST = [["From Zero","/src/img/thumbnails/from-zero.webp","Linkin Park"],
-                      ["Debi Tirar Mas Fotos","/src/img/thumbnails/baile_inolvidable_y_dbtf.webp","Bad Bunny"],
-                      ["11 razones","/src/img/thumbnails/11Razones.webp","Aitana"],
-                      ["6 de febrero","/src/img/thumbnails/6-de-febrero.webp","Aitana"]];
+const ALBUMS_LIST = [["Tus Favoritos","/src/img/thumbnails/fav.webp",""],
+                    ["From Zero","/src/img/thumbnails/from-zero.webp","Linkin Park"],
+                    ["Debi Tirar Mas Fotos","/src/img/thumbnails/baile_inolvidable_y_dbtf.webp","Bad Bunny"],
+                    ["11 razones","/src/img/thumbnails/11Razones.webp","Aitana"]];
 
 //-------- PAGINA DE INICIO REPRODUCTOR --------//
 //--- obtengo los elementos del html
@@ -30,7 +45,25 @@ function loadAlbums() {
 }
 
 // Cargar los álbumes cuando el DOM esté listo
-document.addEventListener("DOMContentLoaded", loadAlbums);
+document.addEventListener("DOMContentLoaded", () => {
+  loadLikedSongsFromStorage(); // Cargar favoritos al iniciar
+  loadAlbums();
+  
+  // Agregar event listener al botón de favoritos
+  const btnFav = document.getElementById("btn-fav");
+  btnFav.addEventListener("click", () => {
+    if (selectedSong) {
+      if (likedSongs.has(selectedSong.title)) {
+        likedSongs.delete(selectedSong.title);
+        btnFav.querySelector("i").style.color = "";
+      } else {
+        likedSongs.add(selectedSong.title);
+        btnFav.querySelector("i").style.color = "var(--magenta-btn)";
+      }
+      saveLikedSongsToStorage(); // Guardar cambios en localStorage
+    }
+  });
+});
 
 
 //--- cambia la infomacion del reproductor
@@ -41,12 +74,21 @@ function changeSongInfo(song) {
   const infoSongArtist = document.getElementsByClassName("song-info-artist");
   const lyricsContainer = document.getElementById("lyrics");
   const totalTime = document.getElementById("total-time");
+  const btnFav = document.getElementById("btn-fav");
+
   //---- remplazo el contenido por el de la cancion seleccionada
   infoSongSide.src = song.albumImageUrl;
   infoSongTitle[0].textContent = song.title;
   infoSongArtist[0].textContent = song.artist;
   lyricsContainer.textContent = song.lyrics;
   totalTime.textContent = song.duration;
+
+  // Actualizar el estado del botón de favoritos
+  if (likedSongs.has(song.title)) {
+    btnFav.querySelector("i").style.color = "var(--magenta-btn)";
+  } else {
+    btnFav.querySelector("i").style.color = "";
+  }
 }
 
 //-------- LEECTURA DE JSON Y MANEJO DE EVENTOS --------//
@@ -104,6 +146,11 @@ function loadAlbum(albumNumber) {
   if (albumSongList) {
     albumSongList.remove();
   }
+
+  // Inicializar el conjunto de canciones favoritas si no existe
+  if (!window.likedSongs) {
+    window.likedSongs = new Set();
+  }
   
   // -----------Crear nuevo contenedor de álbum---------
   albumSongList = document.createElement("article");
@@ -128,17 +175,47 @@ function loadAlbum(albumNumber) {
     .then((response) => response.json())
     .then((data) => {
       const songs = data.songs;
-      songs.forEach((song) => {
-                            //ALBUMS_LIST[][0] hacer referencia al nombre del album
-        if (song.album === ALBUMS_LIST[albumNumber][0]) {
-          const articleListAlbum = document.createElement("article");
-          //---- añado id al elemento----
-          articleListAlbum.id = "list-container-album";
-          loadSongs(song, articleListAlbum);
-          albumSongList.appendChild(articleListAlbum);
+      let hasFavorites = false;
+
+      if (albumNumber === 0) {
+        // Para el álbum de favoritos, verificar si hay canciones favoritas
+        songs.forEach((song) => {
+          if (likedSongs.has(song.title)) {
+            hasFavorites = true;
+            const articleListAlbum = document.createElement("article");
+            articleListAlbum.id = "list-container-album";
+            loadSongs(song, articleListAlbum);
+            albumSongList.appendChild(articleListAlbum);
+          }
+        });
+
+        // Si no hay favoritos, mostrar el tutorial
+        if (!hasFavorites) {
+          const tutorialElement = document.createElement("div");
+          tutorialElement.className = "tutorial-favorites";
+          tutorialElement.innerHTML = `
+            <i class="fa-solid fa-heart"></i>
+            <h3>¡No tienes canciones favoritas aún!</h3>
+            <p>Para agregar canciones a tus favoritos:</p>
+            <ol>
+              <li>Selecciona cualquier canción de la lista</li>
+              <li>Haz clic en el icono del corazón 💟 en el reproductor</li>
+              <li>¡La canción aparecerá en tus favoritos!</li>
+            </ol>
+          `;
+          albumSongList.appendChild(tutorialElement);
         }
-      });
-      
+      } else {
+        // Para otros álbumes, mostrar sus canciones normalmente
+        songs.forEach((song) => {
+          if (song.album === ALBUMS_LIST[albumNumber][0]) {
+            const articleListAlbum = document.createElement("article");
+            articleListAlbum.id = "list-container-album";
+            loadSongs(song, articleListAlbum);
+            albumSongList.appendChild(articleListAlbum);
+          }
+        });
+      }
     })
   songList.appendChild(albumSongList);
   

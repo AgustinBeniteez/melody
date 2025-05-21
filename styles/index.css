@@ -75,10 +75,10 @@ nav a {
 }
 
 #btn-nav-news {
-    background-color: var(--salir-cancelar);
+    background-color: var(--magenta-btn);
 
     &:hover {
-        background-color: var(--salir-cancelar-hover);
+        background-color: var(--magenta-btn-hover);
         transition: background-color 0.3s ease;
         cursor: pointer;
         color: var(--font-color);

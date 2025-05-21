@@ -70,10 +70,10 @@ nav a {
 }
 
 #btn-nav-news {
-    background-color: var(--salir-cancelar);
+    background-color: var(--magenta-btn);
 
     &:hover {
-        background-color: var(--salir-cancelar-hover);
+        background-color: var(--magenta-btn-hover);
         transition: background-color 0.3s ease;
         cursor: pointer;
         color: var(--font-color);
@@ -301,6 +301,38 @@ nav a {
  #lyrics-container::-webkit-scrollbar-thumb:hover {
     background: var(--item-list);
  }
+
+/* ----- TUTORIAL DE FAVORITOS ----- */
+.tutorial-favorites {
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    background-color: var(--item-list);
+    border-radius: 10px;
+}
+
+.tutorial-favorites i.fa-heart {
+    font-size: 48px;
+    color: var(--magenta-btn);
+}
+
+.tutorial-favorites h3 {
+    margin-bottom: 15px;
+}
+
+.tutorial-favorites p {
+    margin-bottom: 15px;
+}
+
+.tutorial-favorites ol {
+    text-align: left;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.tutorial-favorites li {
+    margin-bottom: 10px;
+}
 
  /* Estilos de la barra de progreso */
  #control-panel {
