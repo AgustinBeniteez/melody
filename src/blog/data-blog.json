@@ -3,8 +3,6 @@
         {
             "name":"Linkin Park",
             "profileimage": "/src/blog/media/profile-image-linkin-park.webp",
-            "banner": "/src/blog/media/banner-linkin-park.webp",
-            "description": "",
             "posts": [
                 {
                     "content": "Nuevo Album From Zero Deluxe.",
@@ -19,8 +17,6 @@
         {
             "name":"Imagine Dragons",
             "profileimage": "/src/blog/media/profile-image-imagine-dragons.webp",
-            "banner": "/src/blog/media/banner-imagine-dragons.webp",
-            "description": "LOOM out now. Reflections (from the Vault of Smoke + Mirrors) out now. Imagine Dragons: Live from the Hollywood Bowl in cinemas worldwide March 26 & 29.",
             "posts": [
                 {
                     "content": "Encantados de anunciar que tenemos la publicidad grande en TimeSquared.",
@@ -35,8 +31,6 @@
         {
             "name":"Lola Índigo",
             "profileimage": "/src/blog/media/lolaprofile.webp",
-            "banner": "/src/blog/media/lolaprofile.webp",
-            "description": "Artista española multiplatino. Cantante, bailarina y coreógrafa. Nuevas versiones de 'Corazón Partido' y 'Pobre Diabla' ya disponibles.",
             "posts": [
                 {
                     "content": "Quedan solo 925 entradas 🎟️ de visibilidad reducida para el concierto de Lola Indigo en el Estadio Metropolitano de Madrid!!",
