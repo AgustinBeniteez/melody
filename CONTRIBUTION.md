@@ -11,7 +11,7 @@ GUIDE TO CSS DESIGN PATTERNS
 ### 1. Fork this repository
 ### 2. Clone your forked repository
 ```bash
-git clone URL_ADDRESS.com/your-username/your-forked-repository.git
+git clone https://github.com/AgustinBeniteez/melody.git
 ```
 ### 3. Create a new branch
 ```bash
