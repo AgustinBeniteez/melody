@@ -15,7 +15,7 @@ git clone https://github.com/AgustinBeniteez/melody.git
 ```
 ### 3. Create a new branch
 ```bash
-git checkout -b your-branch-name
+git checkout -b main
 ```
 ### 4. Make your changes
 - Follow our design patterns and guidelines
@@ -25,11 +25,11 @@ git checkout -b your-branch-name
 ### 5. Commit your changes
 ```bash
 git add .
-git commit -m "your commit message"
+git commit -m "v 0.4.0 ++"
 ```
 ### 6. Push your changes
 ```bash
-git push origin your-branch-name
+git push origin main
 ```
 ### 7. Create a pull request
 ### 8. Wait for your pull request to be merged
